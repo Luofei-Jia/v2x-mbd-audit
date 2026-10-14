@@ -1,0 +1,67 @@
+{
+  "dataReplay": {
+    "att_rate": 0.174,
+    "P1_F34": {
+      "auroc": 0.7129,
+      "auprc": 0.4775
+    },
+    "P1_F34+F5legit": {
+      "auroc": 0.9115,
+      "auprc": 0.8391
+    },
+    "P2_F34": {
+      "auroc": 0.6568,
+      "auprc": 0.3983
+    },
+    "P2_F34+F5legit": {
+      "auroc": 0.9083,
+      "auprc": 0.8447
+    }
+  },
+  "positionMirroring": {
+    "att_rate": 0.194,
+    "P1_F34": {
+      "auroc": 0.7018,
+      "auprc": 0.4754
+    },
+    "P1_F34+F5legit": {
+      "auroc": 0.7093,
+      "auprc": 0.4853
+    },
+    "P2_F34": {
+      "auroc": 0.7055,
+      "auprc": 0.4795
+    },
+    "P2_F34+F5legit": {
+      "auroc": 0.708,
+      "auprc": 0.484
+    }
+  },
+  "timeDelayAttack": {
+    "att_rate": 0.185,
+    "P1_F34": {
+      "auroc": 0.485,
+      "auprc": 0.173
+    },
+    "P1_F34+F5legit": {
+      "auroc": 0.4739,
+      "auprc": 0.1686
+    },
+    "P1_F34+F5legit+rcv_lag(artifact)": {
+      "auroc": 0.7745,
+      "auprc": 0.3805
+    },
+    "P2_F34": {
+      "auroc": 0.5149,
+      "auprc": 0.1931
+    },
+    "P2_F34+F5legit": {
+      "auroc": 0.5083,
+      "auprc": 0.1896
+    },
+    "P2_F34+F5legit+rcv_lag(artifact)": {
+      "auroc": 0.7652,
+      "auprc": 0.3771
+    }
+  }
+}

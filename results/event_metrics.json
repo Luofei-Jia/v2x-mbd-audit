@@ -1,0 +1,317 @@
+{
+  "accelerationMultiplication": {
+    "n_test": 12013,
+    "n_events": 399,
+    "msg_auroc": 0.9675,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.2483,
+      "event_tpr": 0.9098,
+      "false_alarms_per_veh_hour": 1.852
+    },
+    "fpr_0.01": {
+      "thr": 0.4233,
+      "event_tpr": 0.6541,
+      "false_alarms_per_veh_hour": 0.185
+    },
+    "fpr_0.001": {
+      "thr": 0.6018,
+      "event_tpr": 0.3609,
+      "false_alarms_per_veh_hour": 0.019
+    }
+  },
+  "constantPositionOffset": {
+    "n_test": 12013,
+    "n_events": 85,
+    "msg_auroc": 0.8315,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.6533,
+      "event_tpr": 0.9882,
+      "false_alarms_per_veh_hour": 1.613
+    },
+    "fpr_0.01": {
+      "thr": 0.7317,
+      "event_tpr": 0.9647,
+      "false_alarms_per_veh_hour": 0.161
+    },
+    "fpr_0.001": {
+      "thr": 0.795,
+      "event_tpr": 0.9529,
+      "false_alarms_per_veh_hour": 0.016
+    }
+  },
+  "constantSpeedOffset": {
+    "n_test": 12013,
+    "n_events": 83,
+    "msg_auroc": 0.9977,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.1033,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 1.606
+    },
+    "fpr_0.01": {
+      "thr": 0.3783,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.161
+    },
+    "fpr_0.001": {
+      "thr": 0.8783,
+      "event_tpr": 0.7952,
+      "false_alarms_per_veh_hour": 0.016
+    }
+  },
+  "dataReplay": {
+    "n_test": 12013,
+    "n_events": 91,
+    "msg_auroc": 0.9104,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.26,
+      "event_tpr": 0.989,
+      "false_alarms_per_veh_hour": 1.683
+    },
+    "fpr_0.01": {
+      "thr": 0.4356,
+      "event_tpr": 0.9231,
+      "false_alarms_per_veh_hour": 0.168
+    },
+    "fpr_0.001": {
+      "thr": 0.6008,
+      "event_tpr": 0.8571,
+      "false_alarms_per_veh_hour": 0.017
+    }
+  },
+  "dosAttack": {
+    "n_test": 16852,
+    "n_events": 89,
+    "msg_auroc": 0.9998,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.0117,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 1.635
+    },
+    "fpr_0.01": {
+      "thr": 0.2983,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.164
+    },
+    "fpr_0.001": {
+      "thr": 0.4099,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.016
+    }
+  },
+  "feignedBraking": {
+    "n_test": 12013,
+    "n_events": 472,
+    "msg_auroc": 0.9712,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.1383,
+      "event_tpr": 0.928,
+      "false_alarms_per_veh_hour": 1.874
+    },
+    "fpr_0.01": {
+      "thr": 0.5367,
+      "event_tpr": 0.5953,
+      "false_alarms_per_veh_hour": 0.187
+    },
+    "fpr_0.001": {
+      "thr": 0.708,
+      "event_tpr": 0.2669,
+      "false_alarms_per_veh_hour": 0.019
+    }
+  },
+  "positionMirroring": {
+    "n_test": 12013,
+    "n_events": 74,
+    "msg_auroc": 0.7072,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.4267,
+      "event_tpr": 0.9459,
+      "false_alarms_per_veh_hour": 1.653
+    },
+    "fpr_0.01": {
+      "thr": 0.562,
+      "event_tpr": 0.8649,
+      "false_alarms_per_veh_hour": 0.165
+    },
+    "fpr_0.001": {
+      "thr": 0.7902,
+      "event_tpr": 0.7027,
+      "false_alarms_per_veh_hour": 0.017
+    }
+  },
+  "randomPositionOffset": {
+    "n_test": 12013,
+    "n_events": 83,
+    "msg_auroc": 0.9955,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.405,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 1.616
+    },
+    "fpr_0.01": {
+      "thr": 0.4906,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.162
+    },
+    "fpr_0.001": {
+      "thr": 0.6465,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.016
+    }
+  },
+  "randomSpeedOffset": {
+    "n_test": 12013,
+    "n_events": 81,
+    "msg_auroc": 0.998,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.0733,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 1.676
+    },
+    "fpr_0.01": {
+      "thr": 0.366,
+      "event_tpr": 0.9753,
+      "false_alarms_per_veh_hour": 0.168
+    },
+    "fpr_0.001": {
+      "thr": 0.8835,
+      "event_tpr": 0.9136,
+      "false_alarms_per_veh_hour": 0.017
+    }
+  },
+  "reversedHeading": {
+    "n_test": 12013,
+    "n_events": 84,
+    "msg_auroc": 0.9692,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.3017,
+      "event_tpr": 0.9881,
+      "false_alarms_per_veh_hour": 1.669
+    },
+    "fpr_0.01": {
+      "thr": 0.4717,
+      "event_tpr": 0.9167,
+      "false_alarms_per_veh_hour": 0.167
+    },
+    "fpr_0.001": {
+      "thr": 0.5619,
+      "event_tpr": 0.6905,
+      "false_alarms_per_veh_hour": 0.017
+    }
+  },
+  "suddenConstantSpeed": {
+    "n_test": 12013,
+    "n_events": 39,
+    "msg_auroc": 0.9771,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.0217,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 1.961
+    },
+    "fpr_0.01": {
+      "thr": 0.1532,
+      "event_tpr": 0.7692,
+      "false_alarms_per_veh_hour": 0.196
+    },
+    "fpr_0.001": {
+      "thr": 0.2526,
+      "event_tpr": 0.5385,
+      "false_alarms_per_veh_hour": 0.02
+    }
+  },
+  "suddenStop": {
+    "n_test": 12013,
+    "n_events": 75,
+    "msg_auroc": 0.9544,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.0633,
+      "event_tpr": 0.9333,
+      "false_alarms_per_veh_hour": 1.803
+    },
+    "fpr_0.01": {
+      "thr": 0.2133,
+      "event_tpr": 0.8933,
+      "false_alarms_per_veh_hour": 0.18
+    },
+    "fpr_0.001": {
+      "thr": 0.9617,
+      "event_tpr": 0.7733,
+      "false_alarms_per_veh_hour": 0.018
+    }
+  },
+  "timeDelayAttack": {
+    "n_test": 12013,
+    "n_events": 85,
+    "msg_auroc": 0.516,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.4058,
+      "event_tpr": 0.3059,
+      "false_alarms_per_veh_hour": 1.64
+    },
+    "fpr_0.01": {
+      "thr": 0.5517,
+      "event_tpr": 0.0,
+      "false_alarms_per_veh_hour": 0.164
+    },
+    "fpr_0.001": {
+      "thr": 0.6372,
+      "event_tpr": 0.0,
+      "false_alarms_per_veh_hour": 0.016
+    }
+  },
+  "trafficCongestionSybil": {
+    "n_test": 28775,
+    "n_events": 16762,
+    "msg_auroc": 0.992,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.0033,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.035
+    },
+    "fpr_0.01": {
+      "thr": 0.7381,
+      "event_tpr": 0.6817,
+      "false_alarms_per_veh_hour": 0.004
+    },
+    "fpr_0.001": {
+      "thr": 0.875,
+      "event_tpr": 0.1071,
+      "false_alarms_per_veh_hour": 0.0
+    }
+  },
+  "zeroSpeedReport": {
+    "n_test": 12013,
+    "n_events": 81,
+    "msg_auroc": 1.0,
+    "event_auroc": 1.0,
+    "fpr_0.1": {
+      "thr": 0.0577,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 1.682
+    },
+    "fpr_0.01": {
+      "thr": 0.12,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.168
+    },
+    "fpr_0.001": {
+      "thr": 0.17,
+      "event_tpr": 1.0,
+      "false_alarms_per_veh_hour": 0.017
+    }
+  }
+}

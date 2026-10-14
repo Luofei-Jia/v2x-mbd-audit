@@ -1,0 +1,52 @@
+{
+  "reversedHeading": {
+    "P1": {
+      "auroc": 0.9766,
+      "auprc": 0.9317
+    },
+    "P2": {
+      "auroc": 0.9713,
+      "auprc": 0.9063
+    }
+  },
+  "timeDelayAttack": {
+    "P1": {
+      "auroc": 0.4821,
+      "auprc": 0.1711
+    },
+    "P2": {
+      "auroc": 0.5039,
+      "auprc": 0.1892
+    }
+  },
+  "dataReplay": {
+    "P1": {
+      "auroc": 0.7097,
+      "auprc": 0.4724
+    },
+    "P2": {
+      "auroc": 0.6632,
+      "auprc": 0.3992
+    }
+  },
+  "positionMirroring": {
+    "P1": {
+      "auroc": 0.6995,
+      "auprc": 0.474
+    },
+    "P2": {
+      "auroc": 0.7034,
+      "auprc": 0.4743
+    }
+  },
+  "constantPositionOffset": {
+    "P1": {
+      "auroc": 0.8377,
+      "auprc": 0.7877
+    },
+    "P2": {
+      "auroc": 0.8309,
+      "auprc": 0.7807
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "accelerationMultiplication": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9657,
+      "auprc": 0.8218
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9639,
+      "auprc": 0.8112
+    }
+  },
+  "constantPositionOffset": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9071,
+      "auprc": 0.8706
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.8365,
+      "auprc": 0.7885
+    }
+  },
+  "constantSpeedOffset": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9987,
+      "auprc": 0.9954
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9984,
+      "auprc": 0.9937
+    }
+  },
+  "dataReplay": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.6794,
+      "auprc": 0.4504
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.7342,
+      "auprc": 0.4851
+    }
+  },
+  "dosAttack": {
+    "highway_2_to_urban_2": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9997,
+      "auprc": 0.9996
+    }
+  },
+  "feignedBraking": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9707,
+      "auprc": 0.8119
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9795,
+      "auprc": 0.8136
+    }
+  },
+  "positionMirroring": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.6576,
+      "auprc": 0.4228
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.4848,
+      "auprc": 0.3312
+    }
+  },
+  "randomPositionOffset": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9985,
+      "auprc": 0.9979
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9964,
+      "auprc": 0.9945
+    }
+  },
+  "randomSpeedOffset": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9988,
+      "auprc": 0.9948
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9985,
+      "auprc": 0.9939
+    }
+  },
+  "reversedHeading": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9901,
+      "auprc": 0.9683
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9325,
+      "auprc": 0.8129
+    }
+  },
+  "suddenConstantSpeed": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.986,
+      "auprc": 0.7609
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9781,
+      "auprc": 0.9232
+    }
+  },
+  "suddenStop": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9894,
+      "auprc": 0.9837
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9601,
+      "auprc": 0.9312
+    }
+  },
+  "timeDelayAttack": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.4697,
+      "auprc": 0.1756
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.4687,
+      "auprc": 0.1687
+    }
+  },
+  "trafficCongestionSybil": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9962,
+      "auprc": 0.9925
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9919,
+      "auprc": 0.9861
+    }
+  },
+  "zeroSpeedReport": {
+    "highway_2_to_urban_2": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "accelerationMultiplication": {
+    "att_rate": 0.092,
+    "P1_F1": {
+      "auroc": 0.9622,
+      "auprc": 0.8208
+    },
+    "P1_F3": {
+      "auroc": 0.9609,
+      "auprc": 0.82
+    },
+    "P2_F3": {
+      "auroc": 0.9576,
+      "auprc": 0.8185
+    },
+    "P3_F1": {
+      "auroc": 0.9943,
+      "auprc": 0.9648
+    },
+    "P3_F3": {
+      "auroc": 0.9941,
+      "auprc": 0.9621
+    }
+  },
+  "constantPositionOffset": {
+    "att_rate": 0.199,
+    "P1_F1": {
+      "auroc": 0.8356,
+      "auprc": 0.7858
+    },
+    "P1_F3": {
+      "auroc": 0.8349,
+      "auprc": 0.7876
+    },
+    "P2_F3": {
+      "auroc": 0.8271,
+      "auprc": 0.7795
+    },
+    "P3_F1": {
+      "auroc": 0.9965,
+      "auprc": 0.9901
+    },
+    "P3_F3": {
+      "auroc": 0.996,
+      "auprc": 0.9889
+    }
+  },
+  "constantSpeedOffset": {
+    "att_rate": 0.207,
+    "P1_F1": {
+      "auroc": 0.6883,
+      "auprc": 0.4469
+    },
+    "P1_F3": {
+      "auroc": 0.9976,
+      "auprc": 0.9908
+    },
+    "P2_F3": {
+      "auroc": 0.9971,
+      "auprc": 0.9876
+    },
+    "P3_F1": {
+      "auroc": 0.998,
+      "auprc": 0.9931
+    },
+    "P3_F3": {
+      "auroc": 0.9993,
+      "auprc": 0.9976
+    }
+  },
+  "dataReplay": {
+    "att_rate": 0.174,
+    "P1_F1": {
+      "auroc": 0.6832,
+      "auprc": 0.3854
+    },
+    "P1_F3": {
+      "auroc": 0.7209,
+      "auprc": 0.4869
+    },
+    "P2_F3": {
+      "auroc": 0.6672,
+      "auprc": 0.4006
+    },
+    "P3_F1": {
+      "auroc": 0.9439,
+      "auprc": 0.8143
+    },
+    "P3_F3": {
+      "auroc": 0.9366,
+      "auprc": 0.7936
+    }
+  },
+  "dosAttack": {
+    "att_rate": 0.417,
+    "P1_F1": {
+      "auroc": 0.4829,
+      "auprc": 0.407
+    },
+    "P1_F3": {
+      "auroc": 0.9998,
+      "auprc": 0.9997
+    },
+    "P2_F3": {
+      "auroc": 0.9998,
+      "auprc": 0.9998
+    },
+    "P3_F1": {
+      "auroc": 0.9999,
+      "auprc": 0.9999
+    },
+    "P3_F3": {
+      "auroc": 0.9998,
+      "auprc": 0.9997
+    }
+  },
+  "feignedBraking": {
+    "att_rate": 0.084,
+    "P1_F1": {
+      "auroc": 0.9732,
+      "auprc": 0.806
+    },
+    "P1_F3": {
+      "auroc": 0.9714,
+      "auprc": 0.805
+    },
+    "P2_F3": {
+      "auroc": 0.9697,
+      "auprc": 0.7913
+    },
+    "P3_F1": {
+      "auroc": 0.9911,
+      "auprc": 0.9475
+    },
+    "P3_F3": {
+      "auroc": 0.9895,
+      "auprc": 0.9432
+    }
+  },
+  "positionMirroring": {
+    "att_rate": 0.194,
+    "P1_F1": {
+      "auroc": 0.6144,
+      "auprc": 0.2654
+    },
+    "P1_F3": {
+      "auroc": 0.7087,
+      "auprc": 0.4754
+    },
+    "P2_F3": {
+      "auroc": 0.7056,
+      "auprc": 0.4754
+    },
+    "P3_F1": {
+      "auroc": 0.9939,
+      "auprc": 0.9827
+    },
+    "P3_F3": {
+      "auroc": 0.9896,
+      "auprc": 0.9656
+    }
+  },
+  "randomPositionOffset": {
+    "att_rate": 0.193,
+    "P1_F1": {
+      "auroc": 0.8647,
+      "auprc": 0.8207
+    },
+    "P1_F3": {
+      "auroc": 0.9955,
+      "auprc": 0.9926
+    },
+    "P2_F3": {
+      "auroc": 0.9952,
+      "auprc": 0.9921
+    },
+    "P3_F1": {
+      "auroc": 0.9919,
+      "auprc": 0.979
+    },
+    "P3_F3": {
+      "auroc": 0.9997,
+      "auprc": 0.9989
+    }
+  },
+  "randomSpeedOffset": {
+    "att_rate": 0.205,
+    "P1_F1": {
+      "auroc": 0.7191,
+      "auprc": 0.5071
+    },
+    "P1_F3": {
+      "auroc": 0.9978,
+      "auprc": 0.9898
+    },
+    "P2_F3": {
+      "auroc": 0.9973,
+      "auprc": 0.9832
+    },
+    "P3_F1": {
+      "auroc": 0.997,
+      "auprc": 0.9906
+    },
+    "P3_F3": {
+      "auroc": 0.9994,
+      "auprc": 0.9979
+    }
+  },
+  "reversedHeading": {
+    "att_rate": 0.183,
+    "P1_F1": {
+      "auroc": 0.577,
+      "auprc": 0.1998
+    },
+    "P1_F3": {
+      "auroc": 0.5902,
+      "auprc": 0.2043
+    },
+    "P2_F3": {
+      "auroc": 0.5731,
+      "auprc": 0.2009
+    },
+    "P3_F1": {
+      "auroc": 0.9992,
+      "auprc": 0.9968
+    },
+    "P3_F3": {
+      "auroc": 0.9989,
+      "auprc": 0.9953
+    }
+  },
+  "suddenConstantSpeed": {
+    "att_rate": 0.034,
+    "P1_F1": {
+      "auroc": 0.7003,
+      "auprc": 0.0918
+    },
+    "P1_F3": {
+      "auroc": 0.9815,
+      "auprc": 0.8485
+    },
+    "P2_F3": {
+      "auroc": 0.9789,
+      "auprc": 0.8772
+    },
+    "P3_F1": {
+      "auroc": 0.9913,
+      "auprc": 0.9453
+    },
+    "P3_F3": {
+      "auroc": 0.9965,
+      "auprc": 0.9831
+    }
+  },
+  "suddenStop": {
+    "att_rate": 0.095,
+    "P1_F1": {
+      "auroc": 0.96,
+      "auprc": 0.9143
+    },
+    "P1_F3": {
+      "auroc": 0.9628,
+      "auprc": 0.9302
+    },
+    "P2_F3": {
+      "auroc": 0.9604,
+      "auprc": 0.9327
+    },
+    "P3_F1": {
+      "auroc": 0.9958,
+      "auprc": 0.9766
+    },
+    "P3_F3": {
+      "auroc": 0.9967,
+      "auprc": 0.9912
+    }
+  },
+  "timeDelayAttack": {
+    "att_rate": 0.185,
+    "P1_F1": {
+      "auroc": 0.4882,
+      "auprc": 0.1729
+    },
+    "P1_F3": {
+      "auroc": 0.4823,
+      "auprc": 0.1716
+    },
+    "P2_F3": {
+      "auroc": 0.51,
+      "auprc": 0.1908
+    },
+    "P3_F1": {
+      "auroc": 0.9965,
+      "auprc": 0.9887
+    },
+    "P3_F3": {
+      "auroc": 0.9952,
+      "auprc": 0.9844
+    }
+  },
+  "trafficCongestionSybil": {
+    "att_rate": 0.471,
+    "P1_F1": {
+      "auroc": 0.6917,
+      "auprc": 0.7146
+    },
+    "P1_F3": {
+      "auroc": 0.9924,
+      "auprc": 0.985
+    },
+    "P2_F3": {
+      "auroc": 0.9924,
+      "auprc": 0.9908
+    },
+    "P3_F1": {
+      "auroc": 0.9378,
+      "auprc": 0.9163
+    },
+    "P3_F3": {
+      "auroc": 0.999,
+      "auprc": 0.9984
+    }
+  },
+  "zeroSpeedReport": {
+    "att_rate": 0.191,
+    "P1_F1": {
+      "auroc": 0.9999,
+      "auprc": 0.9994
+    },
+    "P1_F3": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    },
+    "P2_F3": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    },
+    "P3_F1": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    },
+    "P3_F3": {
+      "auroc": 1.0,
+      "auprc": 1.0
+    }
+  }
+}

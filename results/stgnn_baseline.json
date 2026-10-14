@@ -1,0 +1,14 @@
+{
+  "dataReplay": {
+    "auroc": 0.6308,
+    "auprc": 0.2428
+  },
+  "positionMirroring": {
+    "auroc": 0.6669,
+    "auprc": 0.2916
+  },
+  "timeDelayAttack": {
+    "auroc": 0.4717,
+    "auprc": 0.1734
+  }
+}

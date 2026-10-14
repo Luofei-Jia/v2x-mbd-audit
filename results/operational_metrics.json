@@ -1,0 +1,452 @@
+{
+  "accelerationMultiplication": {
+    "n_test": 12013,
+    "n_events": 399,
+    "msg_auroc": 0.9675,
+    "lat_fpr_0.01": {
+      "thr": 0.4233,
+      "detection_rate": 0.6541,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.6018,
+      "detection_rate": 0.3609,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 0.9751,
+      "auroc_min": 0.9421,
+      "auroc_max": 0.9891,
+      "fpr01_mean": 0.0101,
+      "fpr01_max": 0.0179
+    },
+    "infer_njobs1_us_per_msg": 8.2,
+    "infer_njobs_1_us_per_msg": 5.7
+  },
+  "constantPositionOffset": {
+    "n_test": 12013,
+    "n_events": 85,
+    "msg_auroc": 0.8315,
+    "lat_fpr_0.01": {
+      "thr": 0.7317,
+      "detection_rate": 0.9647,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.795,
+      "detection_rate": 0.9529,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 0.8159,
+      "auroc_min": 0.4897,
+      "auroc_max": 0.9241,
+      "fpr01_mean": 0.0105,
+      "fpr01_max": 0.0329
+    },
+    "infer_njobs1_us_per_msg": 6.3,
+    "infer_njobs_1_us_per_msg": 4.7
+  },
+  "constantSpeedOffset": {
+    "n_test": 12013,
+    "n_events": 83,
+    "msg_auroc": 0.9977,
+    "lat_fpr_0.01": {
+      "thr": 0.3783,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 1.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.8783,
+      "detection_rate": 0.7952,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 1.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 0.9976,
+      "auroc_min": 0.9951,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0088,
+      "fpr01_max": 0.0147
+    },
+    "infer_njobs1_us_per_msg": 4.7,
+    "infer_njobs_1_us_per_msg": 4.7
+  },
+  "dataReplay": {
+    "n_test": 12013,
+    "n_events": 91,
+    "msg_auroc": 0.9104,
+    "lat_fpr_0.01": {
+      "thr": 0.4356,
+      "detection_rate": 0.9231,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.6008,
+      "detection_rate": 0.8571,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 0.9226,
+      "auroc_min": 0.8489,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0076,
+      "fpr01_max": 0.0329
+    },
+    "infer_njobs1_us_per_msg": 9.9,
+    "infer_njobs_1_us_per_msg": 5.6
+  },
+  "dosAttack": {
+    "n_test": 16852,
+    "n_events": 89,
+    "msg_auroc": 0.9998,
+    "lat_fpr_0.01": {
+      "thr": 0.2983,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 0.12
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.4099,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 0.17
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 11,
+      "n_skipped": 1,
+      "auroc_mean": 0.9998,
+      "auroc_min": 0.9997,
+      "auroc_max": 0.9999,
+      "fpr01_mean": 0.0094,
+      "fpr01_max": 0.014
+    },
+    "infer_njobs1_us_per_msg": 2.0,
+    "infer_njobs_1_us_per_msg": 3.4
+  },
+  "feignedBraking": {
+    "n_test": 12013,
+    "n_events": 472,
+    "msg_auroc": 0.9712,
+    "lat_fpr_0.01": {
+      "thr": 0.5367,
+      "detection_rate": 0.5953,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.708,
+      "detection_rate": 0.2669,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 11,
+      "n_skipped": 1,
+      "auroc_mean": 0.9776,
+      "auroc_min": 0.9488,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0099,
+      "fpr01_max": 0.0223
+    },
+    "infer_njobs1_us_per_msg": 6.1,
+    "infer_njobs_1_us_per_msg": 5.7
+  },
+  "positionMirroring": {
+    "n_test": 12013,
+    "n_events": 74,
+    "msg_auroc": 0.7072,
+    "lat_fpr_0.01": {
+      "thr": 0.562,
+      "detection_rate": 0.8649,
+      "median_msgs_to_detect": 3.0,
+      "median_secs_to_detect": 3.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.7902,
+      "detection_rate": 0.7027,
+      "median_msgs_to_detect": 8.0,
+      "median_secs_to_detect": 8.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 11,
+      "n_skipped": 1,
+      "auroc_mean": 0.6958,
+      "auroc_min": 0.5203,
+      "auroc_max": 0.8361,
+      "fpr01_mean": 0.0121,
+      "fpr01_max": 0.0275
+    },
+    "infer_njobs1_us_per_msg": 8.8,
+    "infer_njobs_1_us_per_msg": 5.7
+  },
+  "randomPositionOffset": {
+    "n_test": 12013,
+    "n_events": 83,
+    "msg_auroc": 0.9955,
+    "lat_fpr_0.01": {
+      "thr": 0.4906,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.6465,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 11,
+      "n_skipped": 1,
+      "auroc_mean": 0.998,
+      "auroc_min": 0.9927,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0089,
+      "fpr01_max": 0.0236
+    },
+    "infer_njobs1_us_per_msg": 3.8,
+    "infer_njobs_1_us_per_msg": 4.7
+  },
+  "randomSpeedOffset": {
+    "n_test": 12013,
+    "n_events": 81,
+    "msg_auroc": 0.998,
+    "lat_fpr_0.01": {
+      "thr": 0.366,
+      "detection_rate": 0.9753,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 1.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.8835,
+      "detection_rate": 0.9136,
+      "median_msgs_to_detect": 1.5,
+      "median_secs_to_detect": 1.5
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 0.998,
+      "auroc_min": 0.9953,
+      "auroc_max": 0.9998,
+      "fpr01_mean": 0.0104,
+      "fpr01_max": 0.0284
+    },
+    "infer_njobs1_us_per_msg": 4.5,
+    "infer_njobs_1_us_per_msg": 4.9
+  },
+  "reversedHeading": {
+    "n_test": 12013,
+    "n_events": 84,
+    "msg_auroc": 0.9692,
+    "lat_fpr_0.01": {
+      "thr": 0.4717,
+      "detection_rate": 0.9167,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 1.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.5619,
+      "detection_rate": 0.6905,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 1.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 0.9677,
+      "auroc_min": 0.917,
+      "auroc_max": 0.9998,
+      "fpr01_mean": 0.0104,
+      "fpr01_max": 0.0159
+    },
+    "infer_njobs1_us_per_msg": 7.4,
+    "infer_njobs_1_us_per_msg": 4.8
+  },
+  "suddenConstantSpeed": {
+    "n_test": 12013,
+    "n_events": 39,
+    "msg_auroc": 0.9771,
+    "lat_fpr_0.01": {
+      "thr": 0.1532,
+      "detection_rate": 0.7692,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.2526,
+      "detection_rate": 0.5385,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 11,
+      "n_skipped": 1,
+      "auroc_mean": 0.9432,
+      "auroc_min": 0.4069,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0077,
+      "fpr01_max": 0.0259
+    },
+    "infer_njobs1_us_per_msg": 4.0,
+    "infer_njobs_1_us_per_msg": 5.8
+  },
+  "suddenStop": {
+    "n_test": 12013,
+    "n_events": 75,
+    "msg_auroc": 0.9544,
+    "lat_fpr_0.01": {
+      "thr": 0.2133,
+      "detection_rate": 0.8933,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.9617,
+      "detection_rate": 0.7733,
+      "median_msgs_to_detect": 1.0,
+      "median_secs_to_detect": 1.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 10,
+      "n_skipped": 2,
+      "auroc_mean": 0.9618,
+      "auroc_min": 0.8981,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0132,
+      "fpr01_max": 0.0476
+    },
+    "infer_njobs1_us_per_msg": 3.8,
+    "infer_njobs_1_us_per_msg": 4.8
+  },
+  "timeDelayAttack": {
+    "n_test": 12013,
+    "n_events": 85,
+    "msg_auroc": 0.516,
+    "lat_fpr_0.01": {
+      "thr": 0.5517,
+      "detection_rate": 0.0,
+      "median_msgs_to_detect": null,
+      "median_secs_to_detect": null
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.6372,
+      "detection_rate": 0.0,
+      "median_msgs_to_detect": null,
+      "median_secs_to_detect": null
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 11,
+      "n_skipped": 1,
+      "auroc_mean": 0.564,
+      "auroc_min": 0.417,
+      "auroc_max": 0.8672,
+      "fpr01_mean": 0.0087,
+      "fpr01_max": 0.0762
+    },
+    "infer_njobs1_us_per_msg": 8.5,
+    "infer_njobs_1_us_per_msg": 4.7
+  },
+  "trafficCongestionSybil": {
+    "n_test": 28775,
+    "n_events": 16762,
+    "msg_auroc": 0.992,
+    "lat_fpr_0.01": {
+      "thr": 0.7381,
+      "detection_rate": 0.6817,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.875,
+      "detection_rate": 0.1071,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 13,
+      "n_valid_auroc": 12,
+      "n_skipped": 1,
+      "auroc_mean": 0.991,
+      "auroc_min": 0.9838,
+      "auroc_max": 0.9944,
+      "fpr01_mean": 0.0122,
+      "fpr01_max": 0.0215
+    },
+    "infer_njobs1_us_per_msg": 4.3,
+    "infer_njobs_1_us_per_msg": 2.9
+  },
+  "zeroSpeedReport": {
+    "n_test": 12013,
+    "n_events": 81,
+    "msg_auroc": 1.0,
+    "lat_fpr_0.01": {
+      "thr": 0.12,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "lat_fpr_0.001": {
+      "thr": 0.17,
+      "detection_rate": 1.0,
+      "median_msgs_to_detect": 0.0,
+      "median_secs_to_detect": 0.0
+    },
+    "stability": {
+      "window_s": 600.0,
+      "n_windows": 12,
+      "n_valid_auroc": 12,
+      "n_skipped": 0,
+      "auroc_mean": 1.0,
+      "auroc_min": 1.0,
+      "auroc_max": 1.0,
+      "fpr01_mean": 0.0104,
+      "fpr01_max": 0.0249
+    },
+    "infer_njobs1_us_per_msg": 2.4,
+    "infer_njobs_1_us_per_msg": 4.7
+  }
+}

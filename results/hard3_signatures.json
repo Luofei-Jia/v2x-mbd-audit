@@ -1,0 +1,50 @@
+{
+  "timeDelayAttack": {
+    "delay_ms_auc": 0.510625160586584,
+    "dist_sr_auc": 0.49216238542663193,
+    "rcv_lag_auc": 0.7880712856432232,
+    "delay_ms_mean_att_vs_norm": [
+      1.4541267942446043,
+      1.4436292723582644
+    ],
+    "dist_sr_mean_att_vs_norm": [
+      183.10154876606106,
+      187.254714737122
+    ],
+    "rcv_lag_mean_att_vs_norm": [
+      48.60949363889475,
+      16.09352596396474
+    ],
+    "rcv_lag_p90_att_vs_norm": [
+      100.22689228253795,
+      48.93648184986777
+    ],
+    "rcv_lag_coverage": 0.8476698230816159
+  },
+  "dataReplay": {
+    "collision_auc": 0.7427025254181698,
+    "collision_near_auc": 0.7427025254181698,
+    "consis_auc": 0.5799746297952674,
+    "collision_recall_on_attacker": 0.4854050508363398,
+    "collision_near_recall_on_attacker": 0.4854050508363398,
+    "collision_near_fpr_on_normal": 0.0,
+    "n_attacker_msgs": 3049
+  },
+  "positionMirroring": {
+    "close_rate_auc": 0.5219700633379649,
+    "dist_sr_auc": 0.4898040700910053,
+    "lat_off_auc": 0.4907595665628983,
+    "close_rate_mean_att_vs_norm": [
+      16.61140256521635,
+      16.623928358377345
+    ],
+    "lat_off_mean_att_vs_norm": [
+      123.22938299904996,
+      127.64222787039695
+    ],
+    "lat_off_p90_att_vs_norm": [
+      252.2271342039705,
+      252.87797427123078
+    ]
+  }
+}

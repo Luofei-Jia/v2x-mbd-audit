@@ -1,0 +1,3288 @@
+{
+  "meta": {
+    "scenario": "highway_2",
+    "features": [
+      "delay_ms",
+      "s_profile",
+      "r_profile",
+      "s_posx",
+      "s_posy",
+      "s_edge",
+      "dt_s",
+      "rate",
+      "consistency",
+      "move",
+      "dt_rcv_s",
+      "dt_mismatch",
+      "dir_consistency",
+      "s_spd",
+      "s_spd_noise",
+      "s_acl",
+      "s_acl_noise",
+      "s_hed",
+      "s_hed_noise",
+      "r_spd",
+      "r_spd_noise",
+      "r_acl",
+      "r_acl_noise",
+      "r_hed",
+      "r_hed_noise",
+      "dist_sr",
+      "close_rate",
+      "lat_off",
+      "collision"
+    ],
+    "rf": "200 trees, seeds 0-2, per-seed AUROC averaged",
+    "protocol": "D_i trained on tr2_i = Train minus Test senders; evaluated on te2_j minus senders(tr2_i); te2_j = Test minus Train senders; LOAO train = concat tr2_i (i!=j), duplicate normal messages by (sender_id, sendTime) dropped"
+  },
+  "attacks": [
+    "accelerationMultiplication",
+    "constantPositionOffset",
+    "constantSpeedOffset",
+    "dataReplay",
+    "dosAttack",
+    "feignedBraking",
+    "positionMirroring",
+    "randomPositionOffset",
+    "randomSpeedOffset",
+    "reversedHeading",
+    "suddenConstantSpeed",
+    "suddenStop",
+    "timeDelayAttack",
+    "trafficCongestionSybil",
+    "zeroSpeedReport"
+  ],
+  "matrix_auroc": [
+    [
+      0.9608,
+      0.5339,
+      0.6311,
+      0.5254,
+      0.7354,
+      0.9071,
+      0.5321,
+      0.7204,
+      0.6564,
+      0.5043,
+      0.6717,
+      0.305,
+      0.5369,
+      0.5842,
+      0.5627
+    ],
+    [
+      0.5358,
+      0.8447,
+      0.5231,
+      0.5173,
+      0.5147,
+      0.4634,
+      0.5572,
+      0.8973,
+      0.5119,
+      0.4748,
+      0.4834,
+      0.4564,
+      0.481,
+      0.4912,
+      0.5051
+    ],
+    [
+      0.5439,
+      0.5678,
+      0.9973,
+      0.5854,
+      0.9806,
+      0.5512,
+      0.6113,
+      0.9936,
+      0.9981,
+      0.4635,
+      0.9769,
+      0.6627,
+      0.529,
+      0.9738,
+      0.9973
+    ],
+    [
+      0.5553,
+      0.6387,
+      0.6295,
+      0.9083,
+      0.8673,
+      0.552,
+      0.5157,
+      0.9696,
+      0.6622,
+      0.4621,
+      0.7711,
+      0.5466,
+      0.4738,
+      0.7084,
+      0.9245
+    ],
+    [
+      0.5078,
+      0.5207,
+      0.9263,
+      0.5718,
+      0.9998,
+      0.5077,
+      0.5669,
+      0.9648,
+      0.9338,
+      0.4841,
+      0.9189,
+      0.9201,
+      0.4915,
+      0.9844,
+      0.9665
+    ],
+    [
+      0.6279,
+      0.637,
+      0.6441,
+      0.5518,
+      0.7392,
+      0.9682,
+      0.489,
+      0.797,
+      0.6241,
+      0.5333,
+      0.628,
+      0.6162,
+      0.4814,
+      0.6773,
+      0.7257
+    ],
+    [
+      0.467,
+      0.7052,
+      0.9679,
+      0.5588,
+      0.9642,
+      0.4971,
+      0.708,
+      0.9789,
+      0.9706,
+      0.4991,
+      0.9611,
+      0.6564,
+      0.4885,
+      0.6249,
+      0.9895
+    ],
+    [
+      0.5166,
+      0.8286,
+      0.916,
+      0.5687,
+      0.972,
+      0.5156,
+      0.6129,
+      0.9962,
+      0.938,
+      0.6156,
+      0.93,
+      0.6243,
+      0.5296,
+      0.8165,
+      0.9914
+    ],
+    [
+      0.5332,
+      0.7811,
+      0.9964,
+      0.6467,
+      0.9647,
+      0.4894,
+      0.6209,
+      0.9925,
+      0.9976,
+      0.4658,
+      0.9773,
+      0.677,
+      0.4826,
+      0.9774,
+      0.9964
+    ],
+    [
+      0.6134,
+      0.5117,
+      0.5759,
+      0.5847,
+      0.6952,
+      0.573,
+      0.557,
+      0.7957,
+      0.556,
+      0.9569,
+      0.4913,
+      0.2772,
+      0.5481,
+      0.9089,
+      0.357
+    ],
+    [
+      0.6291,
+      0.5802,
+      0.9811,
+      0.5959,
+      0.9616,
+      0.4763,
+      0.5721,
+      0.9854,
+      0.9773,
+      0.4895,
+      0.9815,
+      0.6981,
+      0.492,
+      0.4621,
+      0.9957
+    ],
+    [
+      0.4769,
+      0.67,
+      0.5965,
+      0.5794,
+      0.9571,
+      0.447,
+      0.4726,
+      0.9476,
+      0.6174,
+      0.3163,
+      0.7931,
+      0.9541,
+      0.5024,
+      0.2131,
+      0.9984
+    ],
+    [
+      0.5406,
+      0.537,
+      0.5555,
+      0.5099,
+      0.6285,
+      0.5407,
+      0.5579,
+      0.6133,
+      0.607,
+      0.4156,
+      0.5911,
+      0.6311,
+      0.5083,
+      0.4273,
+      0.6453
+    ],
+    [
+      0.5112,
+      0.7981,
+      0.5105,
+      0.5717,
+      0.8311,
+      0.5103,
+      0.5069,
+      0.9611,
+      0.5102,
+      0.5793,
+      0.7203,
+      0.4878,
+      0.5056,
+      0.9926,
+      0.9446
+    ],
+    [
+      0.525,
+      0.6027,
+      0.8876,
+      0.5802,
+      0.9912,
+      0.4874,
+      0.5205,
+      0.9887,
+      0.9118,
+      0.5027,
+      0.9279,
+      0.947,
+      0.4971,
+      0.9428,
+      1.0
+    ]
+  ],
+  "matrix_auprc": [
+    [
+      0.8271,
+      0.219,
+      0.2676,
+      0.1809,
+      0.6053,
+      0.6927,
+      0.1957,
+      0.3162,
+      0.2338,
+      0.1843,
+      0.0541,
+      0.0762,
+      0.2067,
+      0.6469,
+      0.1786
+    ],
+    [
+      0.0905,
+      0.804,
+      0.221,
+      0.1744,
+      0.4103,
+      0.0717,
+      0.2102,
+      0.8442,
+      0.1771,
+      0.1698,
+      0.0316,
+      0.0992,
+      0.1838,
+      0.6392,
+      0.1629
+    ],
+    [
+      0.1025,
+      0.2331,
+      0.9886,
+      0.313,
+      0.9738,
+      0.0888,
+      0.4082,
+      0.9633,
+      0.9888,
+      0.1674,
+      0.5676,
+      0.1669,
+      0.2084,
+      0.9586,
+      0.9647
+    ],
+    [
+      0.0954,
+      0.3252,
+      0.2807,
+      0.8447,
+      0.8326,
+      0.0903,
+      0.189,
+      0.9289,
+      0.2795,
+      0.1694,
+      0.139,
+      0.1419,
+      0.1748,
+      0.731,
+      0.6668
+    ],
+    [
+      0.0919,
+      0.2135,
+      0.657,
+      0.227,
+      0.9998,
+      0.0794,
+      0.228,
+      0.7431,
+      0.6238,
+      0.1753,
+      0.2198,
+      0.5434,
+      0.1909,
+      0.9796,
+      0.6987
+    ],
+    [
+      0.3313,
+      0.2701,
+      0.2781,
+      0.1876,
+      0.5726,
+      0.791,
+      0.1805,
+      0.3762,
+      0.2202,
+      0.1979,
+      0.0443,
+      0.1343,
+      0.1859,
+      0.6996,
+      0.2684
+    ],
+    [
+      0.0811,
+      0.3907,
+      0.9305,
+      0.2821,
+      0.9506,
+      0.0745,
+      0.484,
+      0.9299,
+      0.925,
+      0.1842,
+      0.5408,
+      0.1563,
+      0.1846,
+      0.6772,
+      0.9526
+    ],
+    [
+      0.0926,
+      0.7861,
+      0.8105,
+      0.3232,
+      0.9726,
+      0.0807,
+      0.3134,
+      0.9936,
+      0.8405,
+      0.2245,
+      0.5728,
+      0.148,
+      0.213,
+      0.8408,
+      0.9822
+    ],
+    [
+      0.0999,
+      0.4949,
+      0.9871,
+      0.3368,
+      0.9602,
+      0.0744,
+      0.407,
+      0.9537,
+      0.9865,
+      0.1711,
+      0.5177,
+      0.1777,
+      0.1849,
+      0.959,
+      0.9492
+    ],
+    [
+      0.1191,
+      0.2069,
+      0.236,
+      0.2546,
+      0.6566,
+      0.092,
+      0.2019,
+      0.5854,
+      0.1841,
+      0.8759,
+      0.0307,
+      0.0732,
+      0.2063,
+      0.9181,
+      0.1253
+    ],
+    [
+      0.132,
+      0.2385,
+      0.9573,
+      0.3359,
+      0.9628,
+      0.0705,
+      0.3472,
+      0.9782,
+      0.9339,
+      0.1733,
+      0.8806,
+      0.2667,
+      0.186,
+      0.5541,
+      0.9907
+    ],
+    [
+      0.0796,
+      0.295,
+      0.2579,
+      0.3039,
+      0.9527,
+      0.0659,
+      0.1697,
+      0.8992,
+      0.2228,
+      0.1313,
+      0.3624,
+      0.9298,
+      0.1889,
+      0.4658,
+      0.9916
+    ],
+    [
+      0.0886,
+      0.2167,
+      0.229,
+      0.1729,
+      0.4895,
+      0.0805,
+      0.2016,
+      0.2496,
+      0.2206,
+      0.1416,
+      0.0443,
+      0.1406,
+      0.1896,
+      0.5115,
+      0.2245
+    ],
+    [
+      0.0915,
+      0.5827,
+      0.2134,
+      0.2176,
+      0.7418,
+      0.0789,
+      0.1887,
+      0.7669,
+      0.1775,
+      0.2394,
+      0.1177,
+      0.1099,
+      0.1938,
+      0.991,
+      0.6981
+    ],
+    [
+      0.0887,
+      0.2519,
+      0.7474,
+      0.3256,
+      0.9867,
+      0.0729,
+      0.2085,
+      0.9753,
+      0.759,
+      0.1738,
+      0.7011,
+      0.871,
+      0.1905,
+      0.9214,
+      1.0
+    ]
+  ],
+  "detail": {
+    "accelerationMultiplication|accelerationMultiplication": {
+      "auroc_mean": 0.9608,
+      "auroc_seeds": [
+        0.958,
+        0.9609,
+        0.9635
+      ],
+      "auprc_mean": 0.8271,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "accelerationMultiplication|constantPositionOffset": {
+      "auroc_mean": 0.5339,
+      "auroc_seeds": [
+        0.5267,
+        0.5307,
+        0.5443
+      ],
+      "auprc_mean": 0.219,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "accelerationMultiplication|constantSpeedOffset": {
+      "auroc_mean": 0.6311,
+      "auroc_seeds": [
+        0.6384,
+        0.6333,
+        0.6216
+      ],
+      "auprc_mean": 0.2676,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "accelerationMultiplication|dataReplay": {
+      "auroc_mean": 0.5254,
+      "auroc_seeds": [
+        0.5227,
+        0.5365,
+        0.5168
+      ],
+      "auprc_mean": 0.1809,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "accelerationMultiplication|dosAttack": {
+      "auroc_mean": 0.7354,
+      "auroc_seeds": [
+        0.7629,
+        0.7201,
+        0.7233
+      ],
+      "auprc_mean": 0.6053,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "accelerationMultiplication|feignedBraking": {
+      "auroc_mean": 0.9071,
+      "auroc_seeds": [
+        0.9114,
+        0.9083,
+        0.9017
+      ],
+      "auprc_mean": 0.6927,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "accelerationMultiplication|positionMirroring": {
+      "auroc_mean": 0.5321,
+      "auroc_seeds": [
+        0.5289,
+        0.5342,
+        0.5332
+      ],
+      "auprc_mean": 0.1957,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "accelerationMultiplication|randomPositionOffset": {
+      "auroc_mean": 0.7204,
+      "auroc_seeds": [
+        0.6987,
+        0.7275,
+        0.735
+      ],
+      "auprc_mean": 0.3162,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "accelerationMultiplication|randomSpeedOffset": {
+      "auroc_mean": 0.6564,
+      "auroc_seeds": [
+        0.6813,
+        0.6555,
+        0.6324
+      ],
+      "auprc_mean": 0.2338,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "accelerationMultiplication|reversedHeading": {
+      "auroc_mean": 0.5043,
+      "auroc_seeds": [
+        0.4898,
+        0.4785,
+        0.5445
+      ],
+      "auprc_mean": 0.1843,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "accelerationMultiplication|suddenConstantSpeed": {
+      "auroc_mean": 0.6717,
+      "auroc_seeds": [
+        0.6633,
+        0.6645,
+        0.6873
+      ],
+      "auprc_mean": 0.0541,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "accelerationMultiplication|suddenStop": {
+      "auroc_mean": 0.305,
+      "auroc_seeds": [
+        0.2666,
+        0.3258,
+        0.3225
+      ],
+      "auprc_mean": 0.0762,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "accelerationMultiplication|timeDelayAttack": {
+      "auroc_mean": 0.5369,
+      "auroc_seeds": [
+        0.5377,
+        0.5453,
+        0.5276
+      ],
+      "auprc_mean": 0.2067,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "accelerationMultiplication|trafficCongestionSybil": {
+      "auroc_mean": 0.5842,
+      "auroc_seeds": [
+        0.5557,
+        0.5543,
+        0.6426
+      ],
+      "auprc_mean": 0.6469,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "accelerationMultiplication|zeroSpeedReport": {
+      "auroc_mean": 0.5627,
+      "auroc_seeds": [
+        0.5536,
+        0.5611,
+        0.5733
+      ],
+      "auprc_mean": 0.1786,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "constantPositionOffset|accelerationMultiplication": {
+      "auroc_mean": 0.5358,
+      "auroc_seeds": [
+        0.5345,
+        0.5362,
+        0.5366
+      ],
+      "auprc_mean": 0.0905,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "constantPositionOffset|constantPositionOffset": {
+      "auroc_mean": 0.8447,
+      "auroc_seeds": [
+        0.8454,
+        0.844,
+        0.8446
+      ],
+      "auprc_mean": 0.804,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "constantPositionOffset|constantSpeedOffset": {
+      "auroc_mean": 0.5231,
+      "auroc_seeds": [
+        0.5313,
+        0.5187,
+        0.5194
+      ],
+      "auprc_mean": 0.221,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "constantPositionOffset|dataReplay": {
+      "auroc_mean": 0.5173,
+      "auroc_seeds": [
+        0.5186,
+        0.5163,
+        0.5169
+      ],
+      "auprc_mean": 0.1744,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "constantPositionOffset|dosAttack": {
+      "auroc_mean": 0.5147,
+      "auroc_seeds": [
+        0.5357,
+        0.4959,
+        0.5125
+      ],
+      "auprc_mean": 0.4103,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "constantPositionOffset|feignedBraking": {
+      "auroc_mean": 0.4634,
+      "auroc_seeds": [
+        0.4486,
+        0.4695,
+        0.472
+      ],
+      "auprc_mean": 0.0717,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "constantPositionOffset|positionMirroring": {
+      "auroc_mean": 0.5572,
+      "auroc_seeds": [
+        0.5551,
+        0.5633,
+        0.5532
+      ],
+      "auprc_mean": 0.2102,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "constantPositionOffset|randomPositionOffset": {
+      "auroc_mean": 0.8973,
+      "auroc_seeds": [
+        0.8991,
+        0.8965,
+        0.8964
+      ],
+      "auprc_mean": 0.8442,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "constantPositionOffset|randomSpeedOffset": {
+      "auroc_mean": 0.5119,
+      "auroc_seeds": [
+        0.5251,
+        0.5095,
+        0.501
+      ],
+      "auprc_mean": 0.1771,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "constantPositionOffset|reversedHeading": {
+      "auroc_mean": 0.4748,
+      "auroc_seeds": [
+        0.4837,
+        0.4676,
+        0.473
+      ],
+      "auprc_mean": 0.1698,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "constantPositionOffset|suddenConstantSpeed": {
+      "auroc_mean": 0.4834,
+      "auroc_seeds": [
+        0.4786,
+        0.4848,
+        0.4867
+      ],
+      "auprc_mean": 0.0316,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "constantPositionOffset|suddenStop": {
+      "auroc_mean": 0.4564,
+      "auroc_seeds": [
+        0.4615,
+        0.4507,
+        0.4572
+      ],
+      "auprc_mean": 0.0992,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "constantPositionOffset|timeDelayAttack": {
+      "auroc_mean": 0.481,
+      "auroc_seeds": [
+        0.4849,
+        0.4806,
+        0.4775
+      ],
+      "auprc_mean": 0.1838,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "constantPositionOffset|trafficCongestionSybil": {
+      "auroc_mean": 0.4912,
+      "auroc_seeds": [
+        0.5026,
+        0.4837,
+        0.4871
+      ],
+      "auprc_mean": 0.6392,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "constantPositionOffset|zeroSpeedReport": {
+      "auroc_mean": 0.5051,
+      "auroc_seeds": [
+        0.5226,
+        0.4968,
+        0.496
+      ],
+      "auprc_mean": 0.1629,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "constantSpeedOffset|accelerationMultiplication": {
+      "auroc_mean": 0.5439,
+      "auroc_seeds": [
+        0.5591,
+        0.5378,
+        0.5349
+      ],
+      "auprc_mean": 0.1025,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "constantSpeedOffset|constantPositionOffset": {
+      "auroc_mean": 0.5678,
+      "auroc_seeds": [
+        0.5368,
+        0.5706,
+        0.596
+      ],
+      "auprc_mean": 0.2331,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "constantSpeedOffset|constantSpeedOffset": {
+      "auroc_mean": 0.9973,
+      "auroc_seeds": [
+        0.9974,
+        0.9973,
+        0.9972
+      ],
+      "auprc_mean": 0.9886,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "constantSpeedOffset|dataReplay": {
+      "auroc_mean": 0.5854,
+      "auroc_seeds": [
+        0.5861,
+        0.587,
+        0.5832
+      ],
+      "auprc_mean": 0.313,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "constantSpeedOffset|dosAttack": {
+      "auroc_mean": 0.9806,
+      "auroc_seeds": [
+        0.9752,
+        0.9832,
+        0.9833
+      ],
+      "auprc_mean": 0.9738,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "constantSpeedOffset|feignedBraking": {
+      "auroc_mean": 0.5512,
+      "auroc_seeds": [
+        0.5697,
+        0.5531,
+        0.5309
+      ],
+      "auprc_mean": 0.0888,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "constantSpeedOffset|positionMirroring": {
+      "auroc_mean": 0.6113,
+      "auroc_seeds": [
+        0.614,
+        0.606,
+        0.614
+      ],
+      "auprc_mean": 0.4082,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "constantSpeedOffset|randomPositionOffset": {
+      "auroc_mean": 0.9936,
+      "auroc_seeds": [
+        0.9934,
+        0.9936,
+        0.9939
+      ],
+      "auprc_mean": 0.9633,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "constantSpeedOffset|randomSpeedOffset": {
+      "auroc_mean": 0.9981,
+      "auroc_seeds": [
+        0.9982,
+        0.9979,
+        0.9982
+      ],
+      "auprc_mean": 0.9888,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "constantSpeedOffset|reversedHeading": {
+      "auroc_mean": 0.4635,
+      "auroc_seeds": [
+        0.4815,
+        0.4456,
+        0.4633
+      ],
+      "auprc_mean": 0.1674,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "constantSpeedOffset|suddenConstantSpeed": {
+      "auroc_mean": 0.9769,
+      "auroc_seeds": [
+        0.9754,
+        0.9768,
+        0.9785
+      ],
+      "auprc_mean": 0.5676,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "constantSpeedOffset|suddenStop": {
+      "auroc_mean": 0.6627,
+      "auroc_seeds": [
+        0.6039,
+        0.6281,
+        0.756
+      ],
+      "auprc_mean": 0.1669,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "constantSpeedOffset|timeDelayAttack": {
+      "auroc_mean": 0.529,
+      "auroc_seeds": [
+        0.5148,
+        0.5389,
+        0.5332
+      ],
+      "auprc_mean": 0.2084,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "constantSpeedOffset|trafficCongestionSybil": {
+      "auroc_mean": 0.9738,
+      "auroc_seeds": [
+        0.974,
+        0.9735,
+        0.9739
+      ],
+      "auprc_mean": 0.9586,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "constantSpeedOffset|zeroSpeedReport": {
+      "auroc_mean": 0.9973,
+      "auroc_seeds": [
+        0.9972,
+        0.9973,
+        0.9974
+      ],
+      "auprc_mean": 0.9647,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "dataReplay|accelerationMultiplication": {
+      "auroc_mean": 0.5553,
+      "auroc_seeds": [
+        0.5447,
+        0.5541,
+        0.5672
+      ],
+      "auprc_mean": 0.0954,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "dataReplay|constantPositionOffset": {
+      "auroc_mean": 0.6387,
+      "auroc_seeds": [
+        0.6087,
+        0.6322,
+        0.6752
+      ],
+      "auprc_mean": 0.3252,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "dataReplay|constantSpeedOffset": {
+      "auroc_mean": 0.6295,
+      "auroc_seeds": [
+        0.6216,
+        0.6244,
+        0.6424
+      ],
+      "auprc_mean": 0.2807,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "dataReplay|dataReplay": {
+      "auroc_mean": 0.9083,
+      "auroc_seeds": [
+        0.905,
+        0.9133,
+        0.9066
+      ],
+      "auprc_mean": 0.8447,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "dataReplay|dosAttack": {
+      "auroc_mean": 0.8673,
+      "auroc_seeds": [
+        0.86,
+        0.8597,
+        0.8822
+      ],
+      "auprc_mean": 0.8326,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "dataReplay|feignedBraking": {
+      "auroc_mean": 0.552,
+      "auroc_seeds": [
+        0.5494,
+        0.5491,
+        0.5577
+      ],
+      "auprc_mean": 0.0903,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "dataReplay|positionMirroring": {
+      "auroc_mean": 0.5157,
+      "auroc_seeds": [
+        0.5192,
+        0.5046,
+        0.5232
+      ],
+      "auprc_mean": 0.189,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "dataReplay|randomPositionOffset": {
+      "auroc_mean": 0.9696,
+      "auroc_seeds": [
+        0.9674,
+        0.9684,
+        0.973
+      ],
+      "auprc_mean": 0.9289,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "dataReplay|randomSpeedOffset": {
+      "auroc_mean": 0.6622,
+      "auroc_seeds": [
+        0.6665,
+        0.6664,
+        0.6535
+      ],
+      "auprc_mean": 0.2795,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "dataReplay|reversedHeading": {
+      "auroc_mean": 0.4621,
+      "auroc_seeds": [
+        0.4809,
+        0.4649,
+        0.4404
+      ],
+      "auprc_mean": 0.1694,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "dataReplay|suddenConstantSpeed": {
+      "auroc_mean": 0.7711,
+      "auroc_seeds": [
+        0.7779,
+        0.7675,
+        0.7678
+      ],
+      "auprc_mean": 0.139,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "dataReplay|suddenStop": {
+      "auroc_mean": 0.5466,
+      "auroc_seeds": [
+        0.551,
+        0.5239,
+        0.565
+      ],
+      "auprc_mean": 0.1419,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "dataReplay|timeDelayAttack": {
+      "auroc_mean": 0.4738,
+      "auroc_seeds": [
+        0.4713,
+        0.4743,
+        0.4759
+      ],
+      "auprc_mean": 0.1748,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "dataReplay|trafficCongestionSybil": {
+      "auroc_mean": 0.7084,
+      "auroc_seeds": [
+        0.7042,
+        0.7127,
+        0.7084
+      ],
+      "auprc_mean": 0.731,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "dataReplay|zeroSpeedReport": {
+      "auroc_mean": 0.9245,
+      "auroc_seeds": [
+        0.9173,
+        0.9168,
+        0.9394
+      ],
+      "auprc_mean": 0.6668,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "dosAttack|accelerationMultiplication": {
+      "auroc_mean": 0.5078,
+      "auroc_seeds": [
+        0.512,
+        0.4858,
+        0.5257
+      ],
+      "auprc_mean": 0.0919,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "dosAttack|constantPositionOffset": {
+      "auroc_mean": 0.5207,
+      "auroc_seeds": [
+        0.5148,
+        0.5369,
+        0.5105
+      ],
+      "auprc_mean": 0.2135,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "dosAttack|constantSpeedOffset": {
+      "auroc_mean": 0.9263,
+      "auroc_seeds": [
+        0.9201,
+        0.922,
+        0.9367
+      ],
+      "auprc_mean": 0.657,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "dosAttack|dataReplay": {
+      "auroc_mean": 0.5718,
+      "auroc_seeds": [
+        0.5592,
+        0.5938,
+        0.5623
+      ],
+      "auprc_mean": 0.227,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "dosAttack|dosAttack": {
+      "auroc_mean": 0.9998,
+      "auroc_seeds": [
+        0.9998,
+        0.9998,
+        0.9998
+      ],
+      "auprc_mean": 0.9998,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "dosAttack|feignedBraking": {
+      "auroc_mean": 0.5077,
+      "auroc_seeds": [
+        0.5519,
+        0.4883,
+        0.483
+      ],
+      "auprc_mean": 0.0794,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "dosAttack|positionMirroring": {
+      "auroc_mean": 0.5669,
+      "auroc_seeds": [
+        0.5686,
+        0.5441,
+        0.5878
+      ],
+      "auprc_mean": 0.228,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "dosAttack|randomPositionOffset": {
+      "auroc_mean": 0.9648,
+      "auroc_seeds": [
+        0.9623,
+        0.9664,
+        0.9657
+      ],
+      "auprc_mean": 0.7431,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "dosAttack|randomSpeedOffset": {
+      "auroc_mean": 0.9338,
+      "auroc_seeds": [
+        0.9267,
+        0.93,
+        0.9446
+      ],
+      "auprc_mean": 0.6238,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "dosAttack|reversedHeading": {
+      "auroc_mean": 0.4841,
+      "auroc_seeds": [
+        0.4657,
+        0.4675,
+        0.5191
+      ],
+      "auprc_mean": 0.1753,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "dosAttack|suddenConstantSpeed": {
+      "auroc_mean": 0.9189,
+      "auroc_seeds": [
+        0.9195,
+        0.9131,
+        0.9241
+      ],
+      "auprc_mean": 0.2198,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "dosAttack|suddenStop": {
+      "auroc_mean": 0.9201,
+      "auroc_seeds": [
+        0.9214,
+        0.9203,
+        0.9185
+      ],
+      "auprc_mean": 0.5434,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "dosAttack|timeDelayAttack": {
+      "auroc_mean": 0.4915,
+      "auroc_seeds": [
+        0.498,
+        0.4919,
+        0.4845
+      ],
+      "auprc_mean": 0.1909,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "dosAttack|trafficCongestionSybil": {
+      "auroc_mean": 0.9844,
+      "auroc_seeds": [
+        0.9847,
+        0.9846,
+        0.984
+      ],
+      "auprc_mean": 0.9796,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "dosAttack|zeroSpeedReport": {
+      "auroc_mean": 0.9665,
+      "auroc_seeds": [
+        0.9663,
+        0.9662,
+        0.9672
+      ],
+      "auprc_mean": 0.6987,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "feignedBraking|accelerationMultiplication": {
+      "auroc_mean": 0.6279,
+      "auroc_seeds": [
+        0.6328,
+        0.6218,
+        0.6293
+      ],
+      "auprc_mean": 0.3313,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "feignedBraking|constantPositionOffset": {
+      "auroc_mean": 0.637,
+      "auroc_seeds": [
+        0.6271,
+        0.6483,
+        0.6357
+      ],
+      "auprc_mean": 0.2701,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "feignedBraking|constantSpeedOffset": {
+      "auroc_mean": 0.6441,
+      "auroc_seeds": [
+        0.6427,
+        0.6483,
+        0.6413
+      ],
+      "auprc_mean": 0.2781,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "feignedBraking|dataReplay": {
+      "auroc_mean": 0.5518,
+      "auroc_seeds": [
+        0.5549,
+        0.5421,
+        0.5583
+      ],
+      "auprc_mean": 0.1876,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "feignedBraking|dosAttack": {
+      "auroc_mean": 0.7392,
+      "auroc_seeds": [
+        0.7573,
+        0.7115,
+        0.749
+      ],
+      "auprc_mean": 0.5726,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "feignedBraking|feignedBraking": {
+      "auroc_mean": 0.9682,
+      "auroc_seeds": [
+        0.9681,
+        0.9699,
+        0.9667
+      ],
+      "auprc_mean": 0.791,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "feignedBraking|positionMirroring": {
+      "auroc_mean": 0.489,
+      "auroc_seeds": [
+        0.4809,
+        0.4954,
+        0.4907
+      ],
+      "auprc_mean": 0.1805,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "feignedBraking|randomPositionOffset": {
+      "auroc_mean": 0.797,
+      "auroc_seeds": [
+        0.7894,
+        0.804,
+        0.7977
+      ],
+      "auprc_mean": 0.3762,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "feignedBraking|randomSpeedOffset": {
+      "auroc_mean": 0.6241,
+      "auroc_seeds": [
+        0.6227,
+        0.6189,
+        0.6307
+      ],
+      "auprc_mean": 0.2202,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "feignedBraking|reversedHeading": {
+      "auroc_mean": 0.5333,
+      "auroc_seeds": [
+        0.5568,
+        0.5131,
+        0.5299
+      ],
+      "auprc_mean": 0.1979,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "feignedBraking|suddenConstantSpeed": {
+      "auroc_mean": 0.628,
+      "auroc_seeds": [
+        0.6299,
+        0.6379,
+        0.6163
+      ],
+      "auprc_mean": 0.0443,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "feignedBraking|suddenStop": {
+      "auroc_mean": 0.6162,
+      "auroc_seeds": [
+        0.6275,
+        0.5613,
+        0.6599
+      ],
+      "auprc_mean": 0.1343,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "feignedBraking|timeDelayAttack": {
+      "auroc_mean": 0.4814,
+      "auroc_seeds": [
+        0.4884,
+        0.4775,
+        0.4782
+      ],
+      "auprc_mean": 0.1859,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "feignedBraking|trafficCongestionSybil": {
+      "auroc_mean": 0.6773,
+      "auroc_seeds": [
+        0.7153,
+        0.6399,
+        0.6768
+      ],
+      "auprc_mean": 0.6996,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "feignedBraking|zeroSpeedReport": {
+      "auroc_mean": 0.7257,
+      "auroc_seeds": [
+        0.7393,
+        0.734,
+        0.7039
+      ],
+      "auprc_mean": 0.2684,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "positionMirroring|accelerationMultiplication": {
+      "auroc_mean": 0.467,
+      "auroc_seeds": [
+        0.46,
+        0.471,
+        0.4699
+      ],
+      "auprc_mean": 0.0811,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "positionMirroring|constantPositionOffset": {
+      "auroc_mean": 0.7052,
+      "auroc_seeds": [
+        0.7248,
+        0.6874,
+        0.7035
+      ],
+      "auprc_mean": 0.3907,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "positionMirroring|constantSpeedOffset": {
+      "auroc_mean": 0.9679,
+      "auroc_seeds": [
+        0.9704,
+        0.9621,
+        0.9711
+      ],
+      "auprc_mean": 0.9305,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "positionMirroring|dataReplay": {
+      "auroc_mean": 0.5588,
+      "auroc_seeds": [
+        0.5584,
+        0.5595,
+        0.5585
+      ],
+      "auprc_mean": 0.2821,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "positionMirroring|dosAttack": {
+      "auroc_mean": 0.9642,
+      "auroc_seeds": [
+        0.9725,
+        0.9529,
+        0.9673
+      ],
+      "auprc_mean": 0.9506,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "positionMirroring|feignedBraking": {
+      "auroc_mean": 0.4971,
+      "auroc_seeds": [
+        0.5024,
+        0.4911,
+        0.4976
+      ],
+      "auprc_mean": 0.0745,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "positionMirroring|positionMirroring": {
+      "auroc_mean": 0.708,
+      "auroc_seeds": [
+        0.7157,
+        0.7073,
+        0.7009
+      ],
+      "auprc_mean": 0.484,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "positionMirroring|randomPositionOffset": {
+      "auroc_mean": 0.9789,
+      "auroc_seeds": [
+        0.9816,
+        0.9748,
+        0.9804
+      ],
+      "auprc_mean": 0.9299,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "positionMirroring|randomSpeedOffset": {
+      "auroc_mean": 0.9706,
+      "auroc_seeds": [
+        0.9741,
+        0.9655,
+        0.9723
+      ],
+      "auprc_mean": 0.925,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "positionMirroring|reversedHeading": {
+      "auroc_mean": 0.4991,
+      "auroc_seeds": [
+        0.5006,
+        0.4824,
+        0.5143
+      ],
+      "auprc_mean": 0.1842,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "positionMirroring|suddenConstantSpeed": {
+      "auroc_mean": 0.9611,
+      "auroc_seeds": [
+        0.9641,
+        0.9564,
+        0.9627
+      ],
+      "auprc_mean": 0.5408,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "positionMirroring|suddenStop": {
+      "auroc_mean": 0.6564,
+      "auroc_seeds": [
+        0.7293,
+        0.5895,
+        0.6505
+      ],
+      "auprc_mean": 0.1563,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "positionMirroring|timeDelayAttack": {
+      "auroc_mean": 0.4885,
+      "auroc_seeds": [
+        0.4867,
+        0.4912,
+        0.4877
+      ],
+      "auprc_mean": 0.1846,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "positionMirroring|trafficCongestionSybil": {
+      "auroc_mean": 0.6249,
+      "auroc_seeds": [
+        0.6695,
+        0.5909,
+        0.6141
+      ],
+      "auprc_mean": 0.6772,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "positionMirroring|zeroSpeedReport": {
+      "auroc_mean": 0.9895,
+      "auroc_seeds": [
+        0.9922,
+        0.9871,
+        0.9894
+      ],
+      "auprc_mean": 0.9526,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "randomPositionOffset|accelerationMultiplication": {
+      "auroc_mean": 0.5166,
+      "auroc_seeds": [
+        0.5051,
+        0.5122,
+        0.5325
+      ],
+      "auprc_mean": 0.0926,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "randomPositionOffset|constantPositionOffset": {
+      "auroc_mean": 0.8286,
+      "auroc_seeds": [
+        0.8255,
+        0.8323,
+        0.8278
+      ],
+      "auprc_mean": 0.7861,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "randomPositionOffset|constantSpeedOffset": {
+      "auroc_mean": 0.916,
+      "auroc_seeds": [
+        0.9271,
+        0.9058,
+        0.9152
+      ],
+      "auprc_mean": 0.8105,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "randomPositionOffset|dataReplay": {
+      "auroc_mean": 0.5687,
+      "auroc_seeds": [
+        0.5636,
+        0.5596,
+        0.5828
+      ],
+      "auprc_mean": 0.3232,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "randomPositionOffset|dosAttack": {
+      "auroc_mean": 0.972,
+      "auroc_seeds": [
+        0.9711,
+        0.9726,
+        0.9724
+      ],
+      "auprc_mean": 0.9726,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "randomPositionOffset|feignedBraking": {
+      "auroc_mean": 0.5156,
+      "auroc_seeds": [
+        0.5336,
+        0.4949,
+        0.5183
+      ],
+      "auprc_mean": 0.0807,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "randomPositionOffset|positionMirroring": {
+      "auroc_mean": 0.6129,
+      "auroc_seeds": [
+        0.6114,
+        0.6169,
+        0.6105
+      ],
+      "auprc_mean": 0.3134,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "randomPositionOffset|randomPositionOffset": {
+      "auroc_mean": 0.9962,
+      "auroc_seeds": [
+        0.9963,
+        0.9961,
+        0.9962
+      ],
+      "auprc_mean": 0.9936,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "randomPositionOffset|randomSpeedOffset": {
+      "auroc_mean": 0.938,
+      "auroc_seeds": [
+        0.9478,
+        0.9277,
+        0.9386
+      ],
+      "auprc_mean": 0.8405,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "randomPositionOffset|reversedHeading": {
+      "auroc_mean": 0.6156,
+      "auroc_seeds": [
+        0.609,
+        0.6185,
+        0.6192
+      ],
+      "auprc_mean": 0.2245,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "randomPositionOffset|suddenConstantSpeed": {
+      "auroc_mean": 0.93,
+      "auroc_seeds": [
+        0.9323,
+        0.928,
+        0.9298
+      ],
+      "auprc_mean": 0.5728,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "randomPositionOffset|suddenStop": {
+      "auroc_mean": 0.6243,
+      "auroc_seeds": [
+        0.5887,
+        0.6532,
+        0.6309
+      ],
+      "auprc_mean": 0.148,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "randomPositionOffset|timeDelayAttack": {
+      "auroc_mean": 0.5296,
+      "auroc_seeds": [
+        0.5294,
+        0.5286,
+        0.5307
+      ],
+      "auprc_mean": 0.213,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "randomPositionOffset|trafficCongestionSybil": {
+      "auroc_mean": 0.8165,
+      "auroc_seeds": [
+        0.8309,
+        0.81,
+        0.8085
+      ],
+      "auprc_mean": 0.8408,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "randomPositionOffset|zeroSpeedReport": {
+      "auroc_mean": 0.9914,
+      "auroc_seeds": [
+        0.9912,
+        0.9915,
+        0.9914
+      ],
+      "auprc_mean": 0.9822,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "randomSpeedOffset|accelerationMultiplication": {
+      "auroc_mean": 0.5332,
+      "auroc_seeds": [
+        0.5208,
+        0.5316,
+        0.5472
+      ],
+      "auprc_mean": 0.0999,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "randomSpeedOffset|constantPositionOffset": {
+      "auroc_mean": 0.7811,
+      "auroc_seeds": [
+        0.7841,
+        0.7882,
+        0.7711
+      ],
+      "auprc_mean": 0.4949,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "randomSpeedOffset|constantSpeedOffset": {
+      "auroc_mean": 0.9964,
+      "auroc_seeds": [
+        0.9964,
+        0.996,
+        0.9968
+      ],
+      "auprc_mean": 0.9871,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "randomSpeedOffset|dataReplay": {
+      "auroc_mean": 0.6467,
+      "auroc_seeds": [
+        0.6383,
+        0.6556,
+        0.646
+      ],
+      "auprc_mean": 0.3368,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "randomSpeedOffset|dosAttack": {
+      "auroc_mean": 0.9647,
+      "auroc_seeds": [
+        0.9641,
+        0.9655,
+        0.9646
+      ],
+      "auprc_mean": 0.9602,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "randomSpeedOffset|feignedBraking": {
+      "auroc_mean": 0.4894,
+      "auroc_seeds": [
+        0.4738,
+        0.4897,
+        0.5048
+      ],
+      "auprc_mean": 0.0744,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "randomSpeedOffset|positionMirroring": {
+      "auroc_mean": 0.6209,
+      "auroc_seeds": [
+        0.619,
+        0.6219,
+        0.6217
+      ],
+      "auprc_mean": 0.407,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "randomSpeedOffset|randomPositionOffset": {
+      "auroc_mean": 0.9925,
+      "auroc_seeds": [
+        0.9925,
+        0.9933,
+        0.9918
+      ],
+      "auprc_mean": 0.9537,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "randomSpeedOffset|randomSpeedOffset": {
+      "auroc_mean": 0.9976,
+      "auroc_seeds": [
+        0.9979,
+        0.9972,
+        0.9977
+      ],
+      "auprc_mean": 0.9865,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "randomSpeedOffset|reversedHeading": {
+      "auroc_mean": 0.4658,
+      "auroc_seeds": [
+        0.4778,
+        0.4533,
+        0.4663
+      ],
+      "auprc_mean": 0.1711,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "randomSpeedOffset|suddenConstantSpeed": {
+      "auroc_mean": 0.9773,
+      "auroc_seeds": [
+        0.9788,
+        0.9754,
+        0.9777
+      ],
+      "auprc_mean": 0.5177,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "randomSpeedOffset|suddenStop": {
+      "auroc_mean": 0.677,
+      "auroc_seeds": [
+        0.6747,
+        0.6655,
+        0.6907
+      ],
+      "auprc_mean": 0.1777,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "randomSpeedOffset|timeDelayAttack": {
+      "auroc_mean": 0.4826,
+      "auroc_seeds": [
+        0.4716,
+        0.4825,
+        0.4938
+      ],
+      "auprc_mean": 0.1849,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "randomSpeedOffset|trafficCongestionSybil": {
+      "auroc_mean": 0.9774,
+      "auroc_seeds": [
+        0.9774,
+        0.9767,
+        0.978
+      ],
+      "auprc_mean": 0.959,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "randomSpeedOffset|zeroSpeedReport": {
+      "auroc_mean": 0.9964,
+      "auroc_seeds": [
+        0.9962,
+        0.9964,
+        0.9965
+      ],
+      "auprc_mean": 0.9492,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "reversedHeading|accelerationMultiplication": {
+      "auroc_mean": 0.6134,
+      "auroc_seeds": [
+        0.6278,
+        0.6064,
+        0.606
+      ],
+      "auprc_mean": 0.1191,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "reversedHeading|constantPositionOffset": {
+      "auroc_mean": 0.5117,
+      "auroc_seeds": [
+        0.5162,
+        0.5086,
+        0.5103
+      ],
+      "auprc_mean": 0.2069,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "reversedHeading|constantSpeedOffset": {
+      "auroc_mean": 0.5759,
+      "auroc_seeds": [
+        0.5603,
+        0.5848,
+        0.5825
+      ],
+      "auprc_mean": 0.236,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "reversedHeading|dataReplay": {
+      "auroc_mean": 0.5847,
+      "auroc_seeds": [
+        0.5855,
+        0.5779,
+        0.5907
+      ],
+      "auprc_mean": 0.2546,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "reversedHeading|dosAttack": {
+      "auroc_mean": 0.6952,
+      "auroc_seeds": [
+        0.6666,
+        0.7056,
+        0.7134
+      ],
+      "auprc_mean": 0.6566,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "reversedHeading|feignedBraking": {
+      "auroc_mean": 0.573,
+      "auroc_seeds": [
+        0.57,
+        0.5759,
+        0.573
+      ],
+      "auprc_mean": 0.092,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "reversedHeading|positionMirroring": {
+      "auroc_mean": 0.557,
+      "auroc_seeds": [
+        0.5419,
+        0.5562,
+        0.573
+      ],
+      "auprc_mean": 0.2019,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "reversedHeading|randomPositionOffset": {
+      "auroc_mean": 0.7957,
+      "auroc_seeds": [
+        0.7914,
+        0.8091,
+        0.7867
+      ],
+      "auprc_mean": 0.5854,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "reversedHeading|randomSpeedOffset": {
+      "auroc_mean": 0.556,
+      "auroc_seeds": [
+        0.5537,
+        0.5663,
+        0.5479
+      ],
+      "auprc_mean": 0.1841,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "reversedHeading|reversedHeading": {
+      "auroc_mean": 0.9569,
+      "auroc_seeds": [
+        0.9572,
+        0.9606,
+        0.9529
+      ],
+      "auprc_mean": 0.8759,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "reversedHeading|suddenConstantSpeed": {
+      "auroc_mean": 0.4913,
+      "auroc_seeds": [
+        0.4687,
+        0.5105,
+        0.4946
+      ],
+      "auprc_mean": 0.0307,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "reversedHeading|suddenStop": {
+      "auroc_mean": 0.2772,
+      "auroc_seeds": [
+        0.2714,
+        0.2787,
+        0.2815
+      ],
+      "auprc_mean": 0.0732,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "reversedHeading|timeDelayAttack": {
+      "auroc_mean": 0.5481,
+      "auroc_seeds": [
+        0.5569,
+        0.5378,
+        0.5498
+      ],
+      "auprc_mean": 0.2063,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "reversedHeading|trafficCongestionSybil": {
+      "auroc_mean": 0.9089,
+      "auroc_seeds": [
+        0.9217,
+        0.8939,
+        0.9111
+      ],
+      "auprc_mean": 0.9181,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "reversedHeading|zeroSpeedReport": {
+      "auroc_mean": 0.357,
+      "auroc_seeds": [
+        0.3475,
+        0.385,
+        0.3384
+      ],
+      "auprc_mean": 0.1253,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "suddenConstantSpeed|accelerationMultiplication": {
+      "auroc_mean": 0.6291,
+      "auroc_seeds": [
+        0.6122,
+        0.6359,
+        0.6391
+      ],
+      "auprc_mean": 0.132,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "suddenConstantSpeed|constantPositionOffset": {
+      "auroc_mean": 0.5802,
+      "auroc_seeds": [
+        0.5918,
+        0.571,
+        0.578
+      ],
+      "auprc_mean": 0.2385,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "suddenConstantSpeed|constantSpeedOffset": {
+      "auroc_mean": 0.9811,
+      "auroc_seeds": [
+        0.9814,
+        0.9804,
+        0.9815
+      ],
+      "auprc_mean": 0.9573,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "suddenConstantSpeed|dataReplay": {
+      "auroc_mean": 0.5959,
+      "auroc_seeds": [
+        0.6016,
+        0.603,
+        0.5832
+      ],
+      "auprc_mean": 0.3359,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "suddenConstantSpeed|dosAttack": {
+      "auroc_mean": 0.9616,
+      "auroc_seeds": [
+        0.9576,
+        0.9546,
+        0.9726
+      ],
+      "auprc_mean": 0.9628,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "suddenConstantSpeed|feignedBraking": {
+      "auroc_mean": 0.4763,
+      "auroc_seeds": [
+        0.4603,
+        0.4903,
+        0.4783
+      ],
+      "auprc_mean": 0.0705,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "suddenConstantSpeed|positionMirroring": {
+      "auroc_mean": 0.5721,
+      "auroc_seeds": [
+        0.5743,
+        0.5763,
+        0.5656
+      ],
+      "auprc_mean": 0.3472,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "suddenConstantSpeed|randomPositionOffset": {
+      "auroc_mean": 0.9854,
+      "auroc_seeds": [
+        0.9857,
+        0.9849,
+        0.9856
+      ],
+      "auprc_mean": 0.9782,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "suddenConstantSpeed|randomSpeedOffset": {
+      "auroc_mean": 0.9773,
+      "auroc_seeds": [
+        0.979,
+        0.974,
+        0.979
+      ],
+      "auprc_mean": 0.9339,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "suddenConstantSpeed|reversedHeading": {
+      "auroc_mean": 0.4895,
+      "auroc_seeds": [
+        0.475,
+        0.5173,
+        0.4763
+      ],
+      "auprc_mean": 0.1733,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "suddenConstantSpeed|suddenConstantSpeed": {
+      "auroc_mean": 0.9815,
+      "auroc_seeds": [
+        0.9852,
+        0.9796,
+        0.9798
+      ],
+      "auprc_mean": 0.8806,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "suddenConstantSpeed|suddenStop": {
+      "auroc_mean": 0.6981,
+      "auroc_seeds": [
+        0.7621,
+        0.6594,
+        0.6729
+      ],
+      "auprc_mean": 0.2667,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "suddenConstantSpeed|timeDelayAttack": {
+      "auroc_mean": 0.492,
+      "auroc_seeds": [
+        0.4951,
+        0.4921,
+        0.4888
+      ],
+      "auprc_mean": 0.186,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "suddenConstantSpeed|trafficCongestionSybil": {
+      "auroc_mean": 0.4621,
+      "auroc_seeds": [
+        0.4704,
+        0.4634,
+        0.4524
+      ],
+      "auprc_mean": 0.5541,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "suddenConstantSpeed|zeroSpeedReport": {
+      "auroc_mean": 0.9957,
+      "auroc_seeds": [
+        0.9958,
+        0.9955,
+        0.9957
+      ],
+      "auprc_mean": 0.9907,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "suddenStop|accelerationMultiplication": {
+      "auroc_mean": 0.4769,
+      "auroc_seeds": [
+        0.4896,
+        0.4589,
+        0.4822
+      ],
+      "auprc_mean": 0.0796,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "suddenStop|constantPositionOffset": {
+      "auroc_mean": 0.67,
+      "auroc_seeds": [
+        0.7179,
+        0.6582,
+        0.634
+      ],
+      "auprc_mean": 0.295,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "suddenStop|constantSpeedOffset": {
+      "auroc_mean": 0.5965,
+      "auroc_seeds": [
+        0.5992,
+        0.5744,
+        0.6158
+      ],
+      "auprc_mean": 0.2579,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "suddenStop|dataReplay": {
+      "auroc_mean": 0.5794,
+      "auroc_seeds": [
+        0.5858,
+        0.5608,
+        0.5914
+      ],
+      "auprc_mean": 0.3039,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "suddenStop|dosAttack": {
+      "auroc_mean": 0.9571,
+      "auroc_seeds": [
+        0.9457,
+        0.9628,
+        0.9629
+      ],
+      "auprc_mean": 0.9527,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "suddenStop|feignedBraking": {
+      "auroc_mean": 0.447,
+      "auroc_seeds": [
+        0.4387,
+        0.4536,
+        0.4486
+      ],
+      "auprc_mean": 0.0659,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "suddenStop|positionMirroring": {
+      "auroc_mean": 0.4726,
+      "auroc_seeds": [
+        0.461,
+        0.4751,
+        0.4817
+      ],
+      "auprc_mean": 0.1697,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "suddenStop|randomPositionOffset": {
+      "auroc_mean": 0.9476,
+      "auroc_seeds": [
+        0.9532,
+        0.9414,
+        0.9483
+      ],
+      "auprc_mean": 0.8992,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "suddenStop|randomSpeedOffset": {
+      "auroc_mean": 0.6174,
+      "auroc_seeds": [
+        0.613,
+        0.5989,
+        0.6404
+      ],
+      "auprc_mean": 0.2228,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "suddenStop|reversedHeading": {
+      "auroc_mean": 0.3163,
+      "auroc_seeds": [
+        0.3577,
+        0.2892,
+        0.302
+      ],
+      "auprc_mean": 0.1313,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "suddenStop|suddenConstantSpeed": {
+      "auroc_mean": 0.7931,
+      "auroc_seeds": [
+        0.7953,
+        0.7801,
+        0.804
+      ],
+      "auprc_mean": 0.3624,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "suddenStop|suddenStop": {
+      "auroc_mean": 0.9541,
+      "auroc_seeds": [
+        0.9567,
+        0.9516,
+        0.954
+      ],
+      "auprc_mean": 0.9298,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "suddenStop|timeDelayAttack": {
+      "auroc_mean": 0.5024,
+      "auroc_seeds": [
+        0.4949,
+        0.5081,
+        0.5041
+      ],
+      "auprc_mean": 0.1889,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "suddenStop|trafficCongestionSybil": {
+      "auroc_mean": 0.2131,
+      "auroc_seeds": [
+        0.2271,
+        0.173,
+        0.2391
+      ],
+      "auprc_mean": 0.4658,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "suddenStop|zeroSpeedReport": {
+      "auroc_mean": 0.9984,
+      "auroc_seeds": [
+        0.9979,
+        0.9984,
+        0.9988
+      ],
+      "auprc_mean": 0.9916,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "timeDelayAttack|accelerationMultiplication": {
+      "auroc_mean": 0.5406,
+      "auroc_seeds": [
+        0.5296,
+        0.5534,
+        0.5387
+      ],
+      "auprc_mean": 0.0886,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "timeDelayAttack|constantPositionOffset": {
+      "auroc_mean": 0.537,
+      "auroc_seeds": [
+        0.5397,
+        0.5286,
+        0.5429
+      ],
+      "auprc_mean": 0.2167,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "timeDelayAttack|constantSpeedOffset": {
+      "auroc_mean": 0.5555,
+      "auroc_seeds": [
+        0.5617,
+        0.5583,
+        0.5465
+      ],
+      "auprc_mean": 0.229,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "timeDelayAttack|dataReplay": {
+      "auroc_mean": 0.5099,
+      "auroc_seeds": [
+        0.5122,
+        0.5069,
+        0.5107
+      ],
+      "auprc_mean": 0.1729,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "timeDelayAttack|dosAttack": {
+      "auroc_mean": 0.6285,
+      "auroc_seeds": [
+        0.6502,
+        0.6486,
+        0.5867
+      ],
+      "auprc_mean": 0.4895,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "timeDelayAttack|feignedBraking": {
+      "auroc_mean": 0.5407,
+      "auroc_seeds": [
+        0.5394,
+        0.5429,
+        0.54
+      ],
+      "auprc_mean": 0.0805,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "timeDelayAttack|positionMirroring": {
+      "auroc_mean": 0.5579,
+      "auroc_seeds": [
+        0.571,
+        0.5514,
+        0.5514
+      ],
+      "auprc_mean": 0.2016,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "timeDelayAttack|randomPositionOffset": {
+      "auroc_mean": 0.6133,
+      "auroc_seeds": [
+        0.6323,
+        0.6128,
+        0.5948
+      ],
+      "auprc_mean": 0.2496,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "timeDelayAttack|randomSpeedOffset": {
+      "auroc_mean": 0.607,
+      "auroc_seeds": [
+        0.6017,
+        0.6244,
+        0.5948
+      ],
+      "auprc_mean": 0.2206,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "timeDelayAttack|reversedHeading": {
+      "auroc_mean": 0.4156,
+      "auroc_seeds": [
+        0.4248,
+        0.4103,
+        0.4119
+      ],
+      "auprc_mean": 0.1416,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "timeDelayAttack|suddenConstantSpeed": {
+      "auroc_mean": 0.5911,
+      "auroc_seeds": [
+        0.5896,
+        0.5952,
+        0.5884
+      ],
+      "auprc_mean": 0.0443,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "timeDelayAttack|suddenStop": {
+      "auroc_mean": 0.6311,
+      "auroc_seeds": [
+        0.6073,
+        0.6601,
+        0.6258
+      ],
+      "auprc_mean": 0.1406,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "timeDelayAttack|timeDelayAttack": {
+      "auroc_mean": 0.5083,
+      "auroc_seeds": [
+        0.5063,
+        0.5188,
+        0.4998
+      ],
+      "auprc_mean": 0.1896,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "timeDelayAttack|trafficCongestionSybil": {
+      "auroc_mean": 0.4273,
+      "auroc_seeds": [
+        0.4439,
+        0.4317,
+        0.4063
+      ],
+      "auprc_mean": 0.5115,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "timeDelayAttack|zeroSpeedReport": {
+      "auroc_mean": 0.6453,
+      "auroc_seeds": [
+        0.6386,
+        0.644,
+        0.6533
+      ],
+      "auprc_mean": 0.2245,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "trafficCongestionSybil|accelerationMultiplication": {
+      "auroc_mean": 0.5112,
+      "auroc_seeds": [
+        0.5048,
+        0.5147,
+        0.5141
+      ],
+      "auprc_mean": 0.0915,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "trafficCongestionSybil|constantPositionOffset": {
+      "auroc_mean": 0.7981,
+      "auroc_seeds": [
+        0.798,
+        0.796,
+        0.8002
+      ],
+      "auprc_mean": 0.5827,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "trafficCongestionSybil|constantSpeedOffset": {
+      "auroc_mean": 0.5105,
+      "auroc_seeds": [
+        0.4997,
+        0.5022,
+        0.5297
+      ],
+      "auprc_mean": 0.2134,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "trafficCongestionSybil|dataReplay": {
+      "auroc_mean": 0.5717,
+      "auroc_seeds": [
+        0.5769,
+        0.5744,
+        0.5638
+      ],
+      "auprc_mean": 0.2176,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "trafficCongestionSybil|dosAttack": {
+      "auroc_mean": 0.8311,
+      "auroc_seeds": [
+        0.8198,
+        0.8243,
+        0.8492
+      ],
+      "auprc_mean": 0.7418,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "trafficCongestionSybil|feignedBraking": {
+      "auroc_mean": 0.5103,
+      "auroc_seeds": [
+        0.5091,
+        0.5041,
+        0.5179
+      ],
+      "auprc_mean": 0.0789,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "trafficCongestionSybil|positionMirroring": {
+      "auroc_mean": 0.5069,
+      "auroc_seeds": [
+        0.5019,
+        0.5131,
+        0.5056
+      ],
+      "auprc_mean": 0.1887,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "trafficCongestionSybil|randomPositionOffset": {
+      "auroc_mean": 0.9611,
+      "auroc_seeds": [
+        0.9609,
+        0.9616,
+        0.9609
+      ],
+      "auprc_mean": 0.7669,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "trafficCongestionSybil|randomSpeedOffset": {
+      "auroc_mean": 0.5102,
+      "auroc_seeds": [
+        0.5098,
+        0.4934,
+        0.5274
+      ],
+      "auprc_mean": 0.1775,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "trafficCongestionSybil|reversedHeading": {
+      "auroc_mean": 0.5793,
+      "auroc_seeds": [
+        0.5032,
+        0.7406,
+        0.494
+      ],
+      "auprc_mean": 0.2394,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "trafficCongestionSybil|suddenConstantSpeed": {
+      "auroc_mean": 0.7203,
+      "auroc_seeds": [
+        0.7204,
+        0.7244,
+        0.7159
+      ],
+      "auprc_mean": 0.1177,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "trafficCongestionSybil|suddenStop": {
+      "auroc_mean": 0.4878,
+      "auroc_seeds": [
+        0.4901,
+        0.4953,
+        0.4779
+      ],
+      "auprc_mean": 0.1099,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "trafficCongestionSybil|timeDelayAttack": {
+      "auroc_mean": 0.5056,
+      "auroc_seeds": [
+        0.5019,
+        0.5206,
+        0.4942
+      ],
+      "auprc_mean": 0.1938,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "trafficCongestionSybil|trafficCongestionSybil": {
+      "auroc_mean": 0.9926,
+      "auroc_seeds": [
+        0.9929,
+        0.9927,
+        0.9921
+      ],
+      "auprc_mean": 0.991,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "trafficCongestionSybil|zeroSpeedReport": {
+      "auroc_mean": 0.9446,
+      "auroc_seeds": [
+        0.9448,
+        0.9461,
+        0.9429
+      ],
+      "auprc_mean": 0.6981,
+      "n_pos": 2058,
+      "n_neg": 9955
+    },
+    "zeroSpeedReport|accelerationMultiplication": {
+      "auroc_mean": 0.525,
+      "auroc_seeds": [
+        0.5324,
+        0.5252,
+        0.5175
+      ],
+      "auprc_mean": 0.0887,
+      "n_pos": 1047,
+      "n_neg": 10966
+    },
+    "zeroSpeedReport|constantPositionOffset": {
+      "auroc_mean": 0.6027,
+      "auroc_seeds": [
+        0.6267,
+        0.6077,
+        0.5736
+      ],
+      "auprc_mean": 0.2519,
+      "n_pos": 2465,
+      "n_neg": 9548
+    },
+    "zeroSpeedReport|constantSpeedOffset": {
+      "auroc_mean": 0.8876,
+      "auroc_seeds": [
+        0.8786,
+        0.8934,
+        0.8907
+      ],
+      "auprc_mean": 0.7474,
+      "n_pos": 2507,
+      "n_neg": 9506
+    },
+    "zeroSpeedReport|dataReplay": {
+      "auroc_mean": 0.5802,
+      "auroc_seeds": [
+        0.5688,
+        0.5885,
+        0.5832
+      ],
+      "auprc_mean": 0.3256,
+      "n_pos": 2050,
+      "n_neg": 9963
+    },
+    "zeroSpeedReport|dosAttack": {
+      "auroc_mean": 0.9912,
+      "auroc_seeds": [
+        0.9917,
+        0.9906,
+        0.9912
+      ],
+      "auprc_mean": 0.9867,
+      "n_pos": 7172,
+      "n_neg": 9680
+    },
+    "zeroSpeedReport|feignedBraking": {
+      "auroc_mean": 0.4874,
+      "auroc_seeds": [
+        0.4753,
+        0.4732,
+        0.5138
+      ],
+      "auprc_mean": 0.0729,
+      "n_pos": 921,
+      "n_neg": 11092
+    },
+    "zeroSpeedReport|positionMirroring": {
+      "auroc_mean": 0.5205,
+      "auroc_seeds": [
+        0.5439,
+        0.5239,
+        0.4936
+      ],
+      "auprc_mean": 0.2085,
+      "n_pos": 2230,
+      "n_neg": 9783
+    },
+    "zeroSpeedReport|randomPositionOffset": {
+      "auroc_mean": 0.9887,
+      "auroc_seeds": [
+        0.9901,
+        0.9879,
+        0.9882
+      ],
+      "auprc_mean": 0.9753,
+      "n_pos": 2449,
+      "n_neg": 9564
+    },
+    "zeroSpeedReport|randomSpeedOffset": {
+      "auroc_mean": 0.9118,
+      "auroc_seeds": [
+        0.9131,
+        0.9082,
+        0.914
+      ],
+      "auprc_mean": 0.759,
+      "n_pos": 2092,
+      "n_neg": 9921
+    },
+    "zeroSpeedReport|reversedHeading": {
+      "auroc_mean": 0.5027,
+      "auroc_seeds": [
+        0.5652,
+        0.4368,
+        0.506
+      ],
+      "auprc_mean": 0.1738,
+      "n_pos": 2135,
+      "n_neg": 9878
+    },
+    "zeroSpeedReport|suddenConstantSpeed": {
+      "auroc_mean": 0.9279,
+      "auroc_seeds": [
+        0.9239,
+        0.9404,
+        0.9193
+      ],
+      "auprc_mean": 0.7011,
+      "n_pos": 405,
+      "n_neg": 11608
+    },
+    "zeroSpeedReport|suddenStop": {
+      "auroc_mean": 0.947,
+      "auroc_seeds": [
+        0.9491,
+        0.9472,
+        0.9446
+      ],
+      "auprc_mean": 0.871,
+      "n_pos": 1342,
+      "n_neg": 10671
+    },
+    "zeroSpeedReport|timeDelayAttack": {
+      "auroc_mean": 0.4971,
+      "auroc_seeds": [
+        0.4908,
+        0.5013,
+        0.4992
+      ],
+      "auprc_mean": 0.1905,
+      "n_pos": 2307,
+      "n_neg": 9706
+    },
+    "zeroSpeedReport|trafficCongestionSybil": {
+      "auroc_mean": 0.9428,
+      "auroc_seeds": [
+        0.9428,
+        0.9373,
+        0.9483
+      ],
+      "auprc_mean": 0.9214,
+      "n_pos": 16762,
+      "n_neg": 12013
+    },
+    "zeroSpeedReport|zeroSpeedReport": {
+      "auroc_mean": 1.0,
+      "auroc_seeds": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "auprc_mean": 1.0,
+      "n_pos": 2058,
+      "n_neg": 9955
+    }
+  },
+  "loao": {
+    "accelerationMultiplication": {
+      "n_train": 62011,
+      "n_dup_neg_dropped": 135025,
+      "n_pos": 1047,
+      "n_neg": 10966,
+      "auroc_mean": 0.6147,
+      "auroc_seeds": [
+        0.6103,
+        0.6244,
+        0.6093
+      ],
+      "auprc_mean": 0.1518,
+      "best_single": 0.9608,
+      "best_single_src": "accelerationMultiplication",
+      "diag_within": 0.9608
+    },
+    "constantPositionOffset": {
+      "n_train": 61320,
+      "n_dup_neg_dropped": 135716,
+      "n_pos": 2465,
+      "n_neg": 9548,
+      "auroc_mean": 0.8173,
+      "auroc_seeds": [
+        0.8159,
+        0.8145,
+        0.8215
+      ],
+      "auprc_mean": 0.5287,
+      "best_single": 0.8447,
+      "best_single_src": "constantPositionOffset",
+      "diag_within": 0.8447
+    },
+    "constantSpeedOffset": {
+      "n_train": 60950,
+      "n_dup_neg_dropped": 136086,
+      "n_pos": 2507,
+      "n_neg": 9506,
+      "auroc_mean": 0.9941,
+      "auroc_seeds": [
+        0.994,
+        0.9938,
+        0.9945
+      ],
+      "auprc_mean": 0.9785,
+      "best_single": 0.9973,
+      "best_single_src": "constantSpeedOffset",
+      "diag_within": 0.9973
+    },
+    "dataReplay": {
+      "n_train": 61536,
+      "n_dup_neg_dropped": 135500,
+      "n_pos": 2050,
+      "n_neg": 9963,
+      "auroc_mean": 0.5901,
+      "auroc_seeds": [
+        0.585,
+        0.5985,
+        0.5869
+      ],
+      "auprc_mean": 0.3323,
+      "best_single": 0.9083,
+      "best_single_src": "dataReplay",
+      "diag_within": 0.9083
+    },
+    "dosAttack": {
+      "n_train": 55263,
+      "n_dup_neg_dropped": 136213,
+      "n_pos": 7172,
+      "n_neg": 9680,
+      "auroc_mean": 0.9834,
+      "auroc_seeds": [
+        0.9819,
+        0.9849,
+        0.9836
+      ],
+      "auprc_mean": 0.9704,
+      "best_single": 0.9998,
+      "best_single_src": "dosAttack",
+      "diag_within": 0.9998
+    },
+    "feignedBraking": {
+      "n_train": 62671,
+      "n_dup_neg_dropped": 134365,
+      "n_pos": 921,
+      "n_neg": 11092,
+      "auroc_mean": 0.7499,
+      "auroc_seeds": [
+        0.7465,
+        0.7413,
+        0.7619
+      ],
+      "auprc_mean": 0.2045,
+      "best_single": 0.9682,
+      "best_single_src": "feignedBraking",
+      "diag_within": 0.9682
+    },
+    "positionMirroring": {
+      "n_train": 60515,
+      "n_dup_neg_dropped": 136521,
+      "n_pos": 2230,
+      "n_neg": 9783,
+      "auroc_mean": 0.642,
+      "auroc_seeds": [
+        0.6462,
+        0.6347,
+        0.6451
+      ],
+      "auprc_mean": 0.4129,
+      "best_single": 0.708,
+      "best_single_src": "positionMirroring",
+      "diag_within": 0.708
+    },
+    "randomPositionOffset": {
+      "n_train": 60975,
+      "n_dup_neg_dropped": 136061,
+      "n_pos": 2449,
+      "n_neg": 9564,
+      "auroc_mean": 0.9978,
+      "auroc_seeds": [
+        0.9977,
+        0.9977,
+        0.9981
+      ],
+      "auprc_mean": 0.9916,
+      "best_single": 0.9962,
+      "best_single_src": "randomPositionOffset",
+      "diag_within": 0.9962
+    },
+    "randomSpeedOffset": {
+      "n_train": 61088,
+      "n_dup_neg_dropped": 135948,
+      "n_pos": 2092,
+      "n_neg": 9921,
+      "auroc_mean": 0.9955,
+      "auroc_seeds": [
+        0.9957,
+        0.9956,
+        0.9953
+      ],
+      "auprc_mean": 0.978,
+      "best_single": 0.9981,
+      "best_single_src": "constantSpeedOffset",
+      "diag_within": 0.9976
+    },
+    "reversedHeading": {
+      "n_train": 61341,
+      "n_dup_neg_dropped": 135695,
+      "n_pos": 2135,
+      "n_neg": 9878,
+      "auroc_mean": 0.4746,
+      "auroc_seeds": [
+        0.4922,
+        0.4495,
+        0.4823
+      ],
+      "auprc_mean": 0.1695,
+      "best_single": 0.9569,
+      "best_single_src": "reversedHeading",
+      "diag_within": 0.9569
+    },
+    "suddenConstantSpeed": {
+      "n_train": 62860,
+      "n_dup_neg_dropped": 134176,
+      "n_pos": 405,
+      "n_neg": 11608,
+      "auroc_mean": 0.9802,
+      "auroc_seeds": [
+        0.9806,
+        0.9792,
+        0.9808
+      ],
+      "auprc_mean": 0.6949,
+      "best_single": 0.9815,
+      "best_single_src": "suddenConstantSpeed",
+      "diag_within": 0.9815
+    },
+    "suddenStop": {
+      "n_train": 62235,
+      "n_dup_neg_dropped": 134801,
+      "n_pos": 1342,
+      "n_neg": 10671,
+      "auroc_mean": 0.8715,
+      "auroc_seeds": [
+        0.8687,
+        0.8931,
+        0.8526
+      ],
+      "auprc_mean": 0.3745,
+      "best_single": 0.9541,
+      "best_single_src": "suddenStop",
+      "diag_within": 0.9541
+    },
+    "timeDelayAttack": {
+      "n_train": 61091,
+      "n_dup_neg_dropped": 135945,
+      "n_pos": 2307,
+      "n_neg": 9706,
+      "auroc_mean": 0.4814,
+      "auroc_seeds": [
+        0.4728,
+        0.4799,
+        0.4915
+      ],
+      "auprc_mean": 0.1837,
+      "best_single": 0.5481,
+      "best_single_src": "reversedHeading",
+      "diag_within": 0.5083
+    },
+    "trafficCongestionSybil": {
+      "n_train": 44872,
+      "n_dup_neg_dropped": 133644,
+      "n_pos": 16762,
+      "n_neg": 12013,
+      "auroc_mean": 0.9502,
+      "auroc_seeds": [
+        0.9576,
+        0.9473,
+        0.9457
+      ],
+      "auprc_mean": 0.9466,
+      "best_single": 0.9926,
+      "best_single_src": "trafficCongestionSybil",
+      "diag_within": 0.9926
+    },
+    "zeroSpeedReport": {
+      "n_train": 61114,
+      "n_dup_neg_dropped": 135922,
+      "n_pos": 2058,
+      "n_neg": 9955,
+      "auroc_mean": 0.9972,
+      "auroc_seeds": [
+        0.9968,
+        0.9975,
+        0.9974
+      ],
+      "auprc_mean": 0.9824,
+      "best_single": 1.0,
+      "best_single_src": "zeroSpeedReport",
+      "diag_within": 1.0
+    }
+  }
+}

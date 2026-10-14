@@ -1,0 +1,44 @@
+{
+  "dataReplay": {
+    "auroc": 0.6308,
+    "auprc": 0.2428,
+    "auroc_seeds": [
+      0.636,
+      0.6324,
+      0.6241
+    ],
+    "auprc_seeds": [
+      0.2454,
+      0.2511,
+      0.2321
+    ]
+  },
+  "positionMirroring": {
+    "auroc": 0.6669,
+    "auprc": 0.2916,
+    "auroc_seeds": [
+      0.7042,
+      0.6722,
+      0.6243
+    ],
+    "auprc_seeds": [
+      0.3219,
+      0.2983,
+      0.2546
+    ]
+  },
+  "timeDelayAttack": {
+    "auroc": 0.4717,
+    "auprc": 0.1734,
+    "auroc_seeds": [
+      0.4801,
+      0.4649,
+      0.4702
+    ],
+    "auprc_seeds": [
+      0.1762,
+      0.1709,
+      0.1733
+    ]
+  }
+}

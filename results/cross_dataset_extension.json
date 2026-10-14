@@ -1,0 +1,394 @@
+{
+  "note": "Extension temporal split at sendTime<60480s (70%), train negatives subsampled to 150k (RandomState(42)), test on all negatives; aligned sender-side features spd/acl/hed/dt/rate/consistency/move/dir_cons",
+  "E1_extension_baseline": {
+    "1": {
+      "auroc": 0.9999,
+      "auprc": 0.9983,
+      "n_pos_test": 16912
+    },
+    "2": {
+      "auroc": 0.498,
+      "auprc": 0.0213,
+      "n_pos_test": 16404
+    },
+    "3": {
+      "auroc": 0.9999,
+      "auprc": 0.9986,
+      "n_pos_test": 17911
+    },
+    "4": {
+      "auroc": 0.9986,
+      "auprc": 0.9913,
+      "n_pos_test": 17059
+    },
+    "5": {
+      "auroc": 0.9953,
+      "auprc": 0.9863,
+      "n_pos_test": 16361
+    },
+    "6": {
+      "auroc": 0.9952,
+      "auprc": 0.9632,
+      "n_pos_test": 18013
+    },
+    "7": {
+      "auroc": 0.9957,
+      "auprc": 0.9848,
+      "n_pos_test": 16139
+    },
+    "8": {
+      "auroc": 0.9894,
+      "auprc": 0.9495,
+      "n_pos_test": 17304
+    },
+    "9": {
+      "auroc": 0.9254,
+      "auprc": 0.8262,
+      "n_pos_test": 16983
+    },
+    "10": {
+      "auroc": 0.9945,
+      "auprc": 0.9868,
+      "n_pos_test": 16837
+    },
+    "11": {
+      "auroc": 0.8697,
+      "auprc": 0.7498,
+      "n_pos_test": 16611
+    },
+    "12": {
+      "auroc": 0.7879,
+      "auprc": 0.5477,
+      "n_pos_test": 17836
+    },
+    "13": {
+      "auroc": 1.0,
+      "auprc": 0.9998,
+      "n_pos_test": 53828
+    },
+    "14": {
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "n_pos_test": 50294
+    },
+    "15": {
+      "auroc": 0.9999,
+      "auprc": 0.9998,
+      "n_pos_test": 49571
+    },
+    "16": {
+      "auroc": 0.8918,
+      "auprc": 0.8207,
+      "n_pos_test": 64446
+    },
+    "17": {
+      "auroc": 0.8626,
+      "auprc": 0.7419,
+      "n_pos_test": 17153
+    },
+    "18": {
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "n_pos_test": 35481
+    },
+    "19": {
+      "auroc": 0.9999,
+      "auprc": 0.9984,
+      "n_pos_test": 32586
+    }
+  },
+  "E2_nextgen_to_extension": {
+    "dosAttack": {
+      "13": {
+        "auroc": 1.0,
+        "auprc": 0.9998
+      },
+      "14": {
+        "auroc": 1.0,
+        "auprc": 0.9998
+      },
+      "15": {
+        "auroc": 1.0,
+        "auprc": 0.9998
+      }
+    },
+    "dataReplay": {
+      "10": {
+        "auroc": 0.9822,
+        "auprc": 0.9503
+      },
+      "11": {
+        "auroc": 0.8424,
+        "auprc": 0.6738
+      },
+      "17": {
+        "auroc": 0.5604,
+        "auprc": 0.1911
+      }
+    },
+    "constantPositionOffset": {
+      "2": {
+        "auroc": 0.4933,
+        "auprc": 0.021
+      }
+    },
+    "constantSpeedOffset": {
+      "6": {
+        "auroc": 0.9676,
+        "auprc": 0.6143
+      }
+    },
+    "randomPositionOffset": {
+      "4": {
+        "auroc": 0.988,
+        "auprc": 0.9532
+      }
+    },
+    "randomSpeedOffset": {
+      "8": {
+        "auroc": 0.9439,
+        "auprc": 0.392
+      }
+    },
+    "zeroSpeedReport": {
+      "9": {
+        "auroc": 0.7554,
+        "auprc": 0.0972
+      }
+    },
+    "trafficCongestionSybil": {
+      "19": {
+        "auroc": 0.9685,
+        "auprc": 0.7591
+      },
+      "12": {
+        "auroc": 0.4779,
+        "auprc": 0.0243
+      }
+    },
+    "timeDelayAttack": {
+      "6": {
+        "auroc": 0.7309,
+        "auprc": 0.0408
+      },
+      "10": {
+        "auroc": 0.8048,
+        "auprc": 0.052
+      },
+      "11": {
+        "auroc": 0.7305,
+        "auprc": 0.0427
+      },
+      "13": {
+        "auroc": 0.8203,
+        "auprc": 0.1662
+      }
+    }
+  },
+  "E3_extension_to_nextgen": {
+    "dosAttack": {
+      "13": {
+        "auroc": 0.9979,
+        "auprc": 0.998
+      },
+      "14": {
+        "auroc": 0.9848,
+        "auprc": 0.9746
+      },
+      "15": {
+        "auroc": 0.9926,
+        "auprc": 0.9873
+      }
+    },
+    "dataReplay": {
+      "10": {
+        "auroc": 0.5726,
+        "auprc": 0.2867
+      },
+      "11": {
+        "auroc": 0.579,
+        "auprc": 0.3147
+      },
+      "17": {
+        "auroc": 0.5681,
+        "auprc": 0.2445
+      }
+    },
+    "constantPositionOffset": {
+      "2": {
+        "auroc": 0.5195,
+        "auprc": 0.2061
+      }
+    },
+    "constantSpeedOffset": {
+      "6": {
+        "auroc": 0.9509,
+        "auprc": 0.7798
+      }
+    },
+    "randomPositionOffset": {
+      "4": {
+        "auroc": 0.8922,
+        "auprc": 0.6744
+      }
+    },
+    "randomSpeedOffset": {
+      "8": {
+        "auroc": 0.9526,
+        "auprc": 0.7879
+      }
+    },
+    "zeroSpeedReport": {
+      "9": {
+        "auroc": 0.7209,
+        "auprc": 0.4635
+      }
+    },
+    "trafficCongestionSybil": {
+      "19": {
+        "auroc": 0.986,
+        "auprc": 0.9695
+      },
+      "12": {
+        "auroc": 0.4787,
+        "auprc": 0.6562
+      }
+    }
+  },
+  "E4_timeDelay_matrix": {
+    "1": {
+      "auroc": 0.8725,
+      "auprc": 0.0779
+    },
+    "2": {
+      "auroc": 0.4885,
+      "auprc": 0.0204
+    },
+    "3": {
+      "auroc": 0.8133,
+      "auprc": 0.0565
+    },
+    "4": {
+      "auroc": 0.7549,
+      "auprc": 0.0423
+    },
+    "5": {
+      "auroc": 0.8159,
+      "auprc": 0.0558
+    },
+    "6": {
+      "auroc": 0.7309,
+      "auprc": 0.0408
+    },
+    "7": {
+      "auroc": 0.7989,
+      "auprc": 0.0513
+    },
+    "8": {
+      "auroc": 0.6995,
+      "auprc": 0.0357
+    },
+    "9": {
+      "auroc": 0.8502,
+      "auprc": 0.1776
+    },
+    "10": {
+      "auroc": 0.8048,
+      "auprc": 0.052
+    },
+    "11": {
+      "auroc": 0.7305,
+      "auprc": 0.0427
+    },
+    "12": {
+      "auroc": 0.7318,
+      "auprc": 0.1119
+    },
+    "13": {
+      "auroc": 0.8203,
+      "auprc": 0.1662
+    },
+    "14": {
+      "auroc": 0.8112,
+      "auprc": 0.1404
+    },
+    "15": {
+      "auroc": 0.8085,
+      "auprc": 0.1386
+    },
+    "16": {
+      "auroc": 0.7418,
+      "auprc": 0.1511
+    },
+    "17": {
+      "auroc": 0.5148,
+      "auprc": 0.026
+    },
+    "18": {
+      "auroc": 0.4708,
+      "auprc": 0.0395
+    },
+    "19": {
+      "auroc": 0.4634,
+      "auprc": 0.039
+    }
+  },
+  "E4b_locator": {
+    "6": {
+      "constantSpeedOffset": {
+        "auroc": 0.9509,
+        "auprc": 0.7798
+      },
+      "dataReplay": {
+        "auroc": 0.5695,
+        "auprc": 0.2602
+      },
+      "timeDelayAttack": {
+        "auroc": 0.5053,
+        "auprc": 0.1859
+      }
+    },
+    "10": {
+      "constantSpeedOffset": {
+        "auroc": 0.8513,
+        "auprc": 0.6207
+      },
+      "dataReplay": {
+        "auroc": 0.5726,
+        "auprc": 0.2867
+      },
+      "timeDelayAttack": {
+        "auroc": 0.5089,
+        "auprc": 0.1917
+      }
+    },
+    "11": {
+      "constantSpeedOffset": {
+        "auroc": 0.8933,
+        "auprc": 0.7407
+      },
+      "dataReplay": {
+        "auroc": 0.579,
+        "auprc": 0.3146
+      },
+      "timeDelayAttack": {
+        "auroc": 0.5034,
+        "auprc": 0.1867
+      }
+    },
+    "13": {
+      "constantSpeedOffset": {
+        "auroc": 0.7437,
+        "auprc": 0.4458
+      },
+      "dataReplay": {
+        "auroc": 0.5662,
+        "auprc": 0.222
+      },
+      "timeDelayAttack": {
+        "auroc": 0.4923,
+        "auprc": 0.183
+      }
+    }
+  }
+}

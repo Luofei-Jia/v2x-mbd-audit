@@ -1,0 +1,32 @@
+{
+  "dataReplay": {
+    "LSTM": {
+      "auroc": 0.771,
+      "auprc": 0.3996
+    },
+    "Transformer": {
+      "auroc": 0.8996,
+      "auprc": 0.8436
+    }
+  },
+  "positionMirroring": {
+    "LSTM": {
+      "auroc": 0.6161,
+      "auprc": 0.2641
+    },
+    "Transformer": {
+      "auroc": 0.7963,
+      "auprc": 0.5206
+    }
+  },
+  "timeDelayAttack": {
+    "LSTM": {
+      "auroc": 0.4454,
+      "auprc": 0.1728
+    },
+    "Transformer": {
+      "auroc": 0.4698,
+      "auprc": 0.1888
+    }
+  }
+}

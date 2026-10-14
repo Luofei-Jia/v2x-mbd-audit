@@ -1,0 +1,92 @@
+{
+  "dataReplay": {
+    "LSTM": {
+      "auroc": 0.771,
+      "auprc": 0.3996,
+      "auroc_seeds": [
+        0.7962,
+        0.7565,
+        0.7601
+      ],
+      "auprc_seeds": [
+        0.4312,
+        0.3846,
+        0.3829
+      ]
+    },
+    "Transformer": {
+      "auroc": 0.8996,
+      "auprc": 0.8436,
+      "auroc_seeds": [
+        0.8808,
+        0.9152,
+        0.9029
+      ],
+      "auprc_seeds": [
+        0.8104,
+        0.8626,
+        0.8578
+      ]
+    }
+  },
+  "positionMirroring": {
+    "LSTM": {
+      "auroc": 0.6161,
+      "auprc": 0.2641,
+      "auroc_seeds": [
+        0.6521,
+        0.593,
+        0.6033
+      ],
+      "auprc_seeds": [
+        0.2994,
+        0.201,
+        0.2919
+      ]
+    },
+    "Transformer": {
+      "auroc": 0.7963,
+      "auprc": 0.5206,
+      "auroc_seeds": [
+        0.7719,
+        0.7872,
+        0.8298
+      ],
+      "auprc_seeds": [
+        0.4527,
+        0.4688,
+        0.6405
+      ]
+    }
+  },
+  "timeDelayAttack": {
+    "LSTM": {
+      "auroc": 0.4454,
+      "auprc": 0.1728,
+      "auroc_seeds": [
+        0.4645,
+        0.4069,
+        0.4647
+      ],
+      "auprc_seeds": [
+        0.1798,
+        0.1621,
+        0.1767
+      ]
+    },
+    "Transformer": {
+      "auroc": 0.4698,
+      "auprc": 0.1888,
+      "auroc_seeds": [
+        0.4592,
+        0.486,
+        0.4643
+      ],
+      "auprc_seeds": [
+        0.1726,
+        0.2041,
+        0.1896
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "F34": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.6794,
+      "auprc": 0.4504
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.7342,
+      "auprc": 0.4851
+    }
+  },
+  "F34+F5legit": {
+    "highway_2_to_urban_2": {
+      "auroc": 0.9072,
+      "auprc": 0.8542
+    },
+    "urban_2_to_highway_2": {
+      "auroc": 0.9114,
+      "auprc": 0.83
+    }
+  }
+}
