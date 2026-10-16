@@ -60,6 +60,14 @@ Feature sets: F1 (12 instantaneous kinematics) ⊂ F3 (16, + per-sender
 consistency) ⊂ F34 (25) ⊂ F34+F5legit (29; F5 = receiver-view `dist_sr`,
 `close_rate`, `lat_off`, content `collision`).
 
+## Preregistration protocol
+
+`EXPERIMENT_PROTOCOL_V1.md` is the full preregistration protocol and
+decision log referenced by the paper (the sections §9a--§9o cited there
+index this file). It is the original working document, written in Chinese,
+with dated registrations for every decision, including predictions that
+were later refuted.
+
 ## Protocol P2 (sender-disjoint)
 
 Senders appearing in the other split are removed from **both** sides, with
