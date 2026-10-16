@@ -66,7 +66,9 @@ consistency) ⊂ F34 (25) ⊂ F34+F5legit (29; F5 = receiver-view `dist_sr`,
 decision log referenced by the paper (the sections §9a--§9o cited there
 index this file). It is the original working document, written in Chinese,
 with dated registrations for every decision, including predictions that
-were later refuted.
+were later refuted. It was added to this repository with v1.0.1
+(2026-10-16); its dated entries are contemporaneous records of each
+decision as it was made.
 
 ## Protocol P2 (sender-disjoint)
 
